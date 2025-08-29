@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Home | Jashwanth Raj{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section id="hero" class="hero">
+    <div class="hero-content">
+        <h1 class="typewriter">Hi, I'm Kottapalli Jashwanth Raj</h1>
+        <p class="subtitle">AI Enthusiast | Developer | Problem Solver</p>
+        <div class="hero-buttons">
+            <a href="{% url 'projects' %}" class="btn primary">🚀 View My Projects</a>
+            <a href="{% url 'contact' %}" class="btn secondary">📬 Contact Me</a>
+            <a href="{% static 'files/Kottapalli_Jashwanth_Raj_Fresher_Resume.docx' %}" class="cv"> 📄 Download CV </a>
+        </div>
+    </div>
+    <div class="hero-image">
+        <img src="{% static 'images/Passport photo.jpg' %}" alt="Jashwanth Raj">
+    </div>
+</section>
+
+{% endblock %}

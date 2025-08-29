@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block title %}About | Portfolio{% endblock %}
+
+{% block content %}
+{% load static %}
+
+<section class="about-modern">
+    <div class="container">
+        <!-- Intro Section -->
+        <div class="about-intro fade-in">
+            <h2 class="section-title">About Me</h2>
+            <p class="intro-text">
+                Hi, I’m <span class="highlight">Jashwanth Raj</span>, an 
+                <strong>AI Developer</strong> passionate about building intelligent systems 
+                that create real-world impact 🚀.  
+                I thrive on exploring <em>cutting-edge technologies</em>, 
+                crafting scalable solutions, and constantly challenging myself. 
+            </p>
+        </div>
+
+        <!-- Skills Section -->
+        <div class="skills-grid">
+            <div class="skill-card slide-up">
+                <h3>💻 Programming</h3>
+                <p>Python, Django, HTML, CSS, JavaScript</p>
+            </div>
+            <div class="skill-card slide-up delay-1">
+                <h3>🤖 AI & ML</h3>
+                <p>Machine Learning, Deep Learning, Data Science</p>
+            </div>
+            <div class="skill-card slide-up delay-2">
+                <h3>⚡ Tools</h3>
+                <p>Git, GitHub, APIs, Docker, DevOps Basics</p>
+            </div>
+        </div>
+
+        <!-- Fun Facts / Extra Section -->
+        <div class="fun-facts fade-in">
+            <h2 class="section-title">⚡ Fun Facts</h2>
+            <ul>
+                <li>I love <span class="highlight">cricket 🏏</span> almost as much as coding.</li>
+                <li>I aim to <strong>start my own company</strong> in the future.</li>
+                <li>Always curious about the <em>next big tech trend</em>.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+{% endblock %}

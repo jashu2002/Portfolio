@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+
+<section class="projects-section">
+    <div class="container">
+         <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card" style="background-image: url('{% static 'images/project1.jpg' %}');">
+                <div class="overlay">
+                    <h3>Breast Cancer Prediction</h3>
+                    <p>ML model achieving <strong>92% accuracy</strong> on real-world data.</p>
+                    <a href="https://github.com/yourgithub/project1" target="_blank" class="btn btn-secondary">View on GitHub</a>
+                </div>
+            </div>
+
+            <div class="project-card" style="background-image: url('{% static 'images/project2.jpg' %}');">
+                <div class="overlay">
+                    <h3>YOLO-Object-Detection</h3>
+                    <p>Deep-Learning model for <em>face recognization</em>.</p>
+                    <a href="https://github.com/jashu2002/YOLO-Object-Detection.git" target="_blank" class="btn btn-secondary">View on GitHub</a>
+                </div>
+            </div>
+
+            <div class="project-card" style="background-image: url('{% static 'images/project3.jpg' %}');">
+                <div class="overlay">
+                    <h3>A-Deep-Learning-Framework-for-Dynamic-Caption-Generation</h3>
+                    <p>Deep Learning model for <strong>Generating captions </strong>.</p>
+                    <a href="https://github.com/jashu2002/A-Deep-Learning-Framework-for-Dynamic-Caption-Generation.git" target="_blank" class="btn btn-secondary">View on GitHub</a>
+                </div>
+            </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

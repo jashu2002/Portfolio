@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% block title %}Contact Me{% endblock %}
+
+{% block content %}
+<section class="contact-section">
+    <div class="contact-container">
+        <h2 class="contact-title">Get in Touch</h2>
+
+        <form method="post" novalidate class="contact-form animate-slide-up">
+            {% csrf_token %}
+            <div class="form-group">
+                {{ form.name.label_tag }}
+                {{ form.name }}
+            </div>
+            <div class="form-group">
+                {{ form.email.label_tag }}
+                {{ form.email }}
+            </div>
+            <div class="form-group">
+                {{ form.message.label_tag }}
+                {{ form.message }}
+            </div>
+            <button type="submit" class="btn btn-animated">Send Message</button>
+        </form>
+
+        <!-- 🔥 Social Media Links -->
+        <div class="social-icons animate-fade-in">
+            <a href="https://www.youtube.com/@Jashwanth__Raj" target="_blank" class="social-icon youtube"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.linkedin.com/in/jashwanthraj/" target="_blank" class="social-icon linkedin"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/jashu2002" target="_blank" class="social-icon github"><i class="fab fa-github"></i></a>
+            <a href="https://www.instagram.com/" target="_blank" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+</section>
+
+{% if messages %}
+    <div id="popup-overlay">
+        <div class="popup-box animate-popup">
+            {% for message in messages %}
+                <p>{{ message }}</p>
+            {% endfor %}
+            <button onclick="closePopup()">OK</button>
+        </div>
+    </div>
+{% endif %}
+
+<!-- FontAwesome for icons -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+{% endblock %}

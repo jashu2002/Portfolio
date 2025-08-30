@@ -121,6 +121,17 @@ STATICFILES_DIRS = [
     BASE_DIR / 'maincode' / 'static',  # Correct path for static files
 ]
 
+
+import os
+
+# Where collected static files will be stored
+STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
+
+# Already existing (don’t remove these)
+STATIC_URL = "/static/"
+
+
+
 # Media files (for images, user uploads, etc.)
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media/'  # Correct path for media files

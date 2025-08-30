@@ -125,6 +125,8 @@ import os
 # Where collected static files will be stored
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 
+
+
 '''STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
 ]   
@@ -132,7 +134,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 
 # Media files (for images, user uploads, etc.)
 MEDIA_URL = '/media/'
-MEDIA_ROOT = BASE_DIR / 'media/'  # Correct path for media files
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field

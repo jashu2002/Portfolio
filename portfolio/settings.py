@@ -125,10 +125,10 @@ import os
 # Where collected static files will be stored
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 
-STATICFILES_DIRS = [
+'''STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
 ]   
-
+'''
 
 # Media files (for images, user uploads, etc.)
 MEDIA_URL = '/media/'

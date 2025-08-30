@@ -117,9 +117,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [
-    BASE_DIR / 'maincode' / 'static',  # Correct path for static files
-]
+
 
 
 import os
@@ -127,9 +125,9 @@ import os
 # Where collected static files will be stored
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 
-# Already existing (don’t remove these)
-STATIC_URL = "/static/"
-
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static"),
+]   
 
 
 # Media files (for images, user uploads, etc.)

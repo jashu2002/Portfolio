@@ -642,15 +642,11 @@
 
     <div class="container" style="border-top: 1px solid var(--border-subtle); margin-top: var(--space-8); padding-top: var(--space-6); font-size: 0.775rem; color: var(--text-tertiary); font-family: var(--font-mono); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
       <div>© 2026 Jashwanth Raj. All rights reserved.</div>
-      <button id="btn-replay-intro-footer" class="btn btn-secondary" style="font-size: 0.75rem; padding: 6px 14px; border-radius: var(--radius-full); cursor: pointer;" aria-label="Replay Cinematic Intro Experience" onclick="window.replayCinematicIntro && window.replayCinematicIntro()">
-        <span style="color: var(--cyan-primary);">⚡</span> Replay Intro
-      </button>
     </div>
   </footer>
 
   <!-- Scripts -->
   <script type="module">
-    import { initCinematicIntro, replayCinematicIntro } from '/src/js/cinematic-intro.js';
     import { init3DCanvas } from '/src/js/canvas3d.js';
     import { initCustomCursor } from '/src/js/cursor.js';
     import { setupInteractiveSounds } from '/src/js/audio.js';
@@ -659,10 +655,7 @@
     import { initMotionFlow } from '/src/js/motionflow-setup.js';
     import { initCodeSandbox } from '/src/js/code-sandbox.js';
 
-    window.replayCinematicIntro = replayCinematicIntro;
-
     const initApp = () => {
-      initCinematicIntro();
       initNav();
       initCustomCursor();
       setupInteractiveSounds();

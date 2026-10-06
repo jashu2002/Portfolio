@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Featured Projects & Case Studies | Jashwanth Raj · SDE-1 Full-Stack Developer</title>
+  <meta name="author" content="Jashwanth Raj">
+  <meta name="description" content="Featured engineering projects and production case studies by Jashwanth Raj: Nexus Workspace (AI Workflow Engine), Aether Stream (Real-Time Pipeline), Horizon Portal (Enterprise CRM), Pulse Mobile, and Spatial 3D WebGL Core.">
+  <meta name="keywords" content="Software Engineering Projects, Jashwanth Raj, Full-Stack Developer, React, Next.js, Python, FastAPI, Model Context Protocol, Case Studies">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://jashwanthraj.dev/projects.html">
+  <meta name="theme-color" content="#050507">
+
+  <!-- Favicon & Icons -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="apple-touch-icon" href="/assets/jashwanth-logo.jpg">
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Jashwanth Raj | SDE-1 Full-Stack Developer">
+  <meta property="og:title" content="Featured Projects & Case Studies | Jashwanth Raj">
+  <meta property="og:description" content="Explore production web applications, real-time event streaming systems, enterprise management portals, and AI automation engines.">
+  <meta property="og:url" content="https://jashwanthraj.dev/projects.html">
+  <meta property="og:image" content="https://jashwanthraj.dev/assets/jashwanth-logo.jpg">
+  <meta property="og:image:width" content="1024">
+  <meta property="og:image:height" content="1024">
+  <meta property="og:image:alt" content="Jashwanth Raj Brand Logo">
+
+  <!-- Twitter / X Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Featured Projects & Case Studies | Jashwanth Raj">
+  <meta name="twitter:description" content="Explore production web applications, real-time event streaming systems, enterprise management portals, and AI automation engines.">
+  <meta name="twitter:image" content="https://jashwanthraj.dev/assets/jashwanth-logo.jpg">
+
+  <!-- Core & Cinematic Styles -->
+  <link rel="stylesheet" href="/src/styles/main.css">
+  <link rel="stylesheet" href="/src/styles/cinematic.css">
+  <link rel="stylesheet" href="/src/styles/components.css">
+  <link rel="stylesheet" href="/src/styles/responsive.css">
+</head>
+<body>
+
+  <!-- Ambient Backdrop -->
+  <div class="cinematic-bg" aria-hidden="true">
+    <div class="grid-overlay"></div>
+    <div class="ambient-spotlight" data-parallax="true" data-parallax-speed="-0.2" data-parallax-speed-tablet="-0.12" data-parallax-speed-mobile="-0.08"></div>
+    <div class="ambient-spotlight-secondary" data-parallax="true" data-parallax-speed="0.22" data-parallax-speed-tablet="0.15" data-parallax-speed-mobile="0.1"></div>
+  </div>
+
+  <!-- Master Header -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" id="header-brand-logo" aria-label="Jashwanth Raj - Home">
+        <div class="brand-glyph">
+          <img src="/assets/jashwanth-logo.jpg" alt="Jashwanth Raj Logo" />
+        </div>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link" id="nav-overview">Overview</a></li>
+          <li><a href="services.html" class="nav-link" id="nav-services">Services</a></li>
+          <li><a href="workflow.html" class="nav-link" id="nav-workflow">Workflow</a></li>
+          <li><a href="skills.html" class="nav-link" id="nav-skills">Skills</a></li>
+          <li><a href="contact.html" class="nav-link" id="nav-contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="cmd-trigger" id="btn-cmd-palette" aria-label="Open Command Menu"><span>⌘K</span></button>
+        <button class="audio-btn" id="btn-audio-toggle" aria-label="Toggle Cinematic Audio">
+          <svg class="audio-speaker-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+            <path class="audio-wave-1" d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+            <path class="audio-wave-2" d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
+          </svg>
+          <span class="audio-btn-label">AUDIO</span>
+        </button>
+        <button class="mobile-nav-toggle" id="btn-mobile-nav" aria-label="Toggle Navigation Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-drawer" id="mobile-drawer" role="dialog" aria-modal="true">
+    <ul class="mobile-nav-links">
+      <li><a href="index.html">Overview</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="workflow.html">Workflow</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+
+  <main id="main-content" style="padding-top: 110px;">
+    <div class="container" style="position: relative;">
+      <div class="parallax-watermark" data-parallax="true" data-parallax-speed="-0.28" data-parallax-speed-tablet="-0.18" data-parallax-speed-mobile="-0.1" style="top: 40px; right: -20px;" aria-hidden="true">PROJECTS</div>
+      
+      <!-- Page Header -->
+      <div style="max-width: 780px; margin-bottom: var(--space-8); position: relative; z-index: 10;" data-mf-animation="fade-up">
+        <div style="display: flex; gap: 8px; margin-bottom: 12px;">
+          <span class="badge badge-cyan">PORTFOLIO SHOWCASE</span>
+          <span class="badge">PRODUCTION ARCHITECTURE</span>
+        </div>
+        <h1>Engineered for <span class="text-shimmer">Performance, Scale</span> & Real-World Utility.</h1>
+        <p style="margin-top: 12px; font-size: 1.05rem; line-height: 1.6; color: var(--text-secondary);">
+          A curated selection of full-stack web applications, real-time backend pipelines, internal enterprise tools, and intelligent workflow automations architected by Jashwanth Raj.
+        </p>
+      </div>
+
+      <!-- Filter Tabs / Dropdown (Sticky glass subnavbar) -->
+      <div class="projects-filter-bar" data-mf-animation="fade-up" data-mf-animation-delay="100">
+        <!-- Desktop Pills View (screens > 768px) -->
+        <div class="filter-pills-wrap" role="tablist">
+          <button class="badge badge-cyan interactive filter-btn active" data-filter="all">All Projects (5)</button>
+          <button class="badge interactive filter-btn" data-filter="agents">AI & Automation</button>
+          <button class="badge interactive filter-btn" data-filter="realtime">Real-Time Systems</button>
+          <button class="badge interactive filter-btn" data-filter="crm">Enterprise Portals & CRMs</button>
+          <button class="badge interactive filter-btn" data-filter="mobile">Mobile Applications</button>
+          <button class="badge interactive filter-btn" data-filter="graphics">Interactive 3D WebGL</button>
+        </div>
+
+        <!-- Mobile Filter Dropdown (screens <= 768px) -->
+        <div class="filter-dropdown-container">
+          <button class="filter-dropdown-trigger interactive" id="filter-dropdown-btn" type="button" aria-haspopup="listbox" aria-expanded="false" aria-controls="filter-dropdown-menu">
+            <div class="filter-dropdown-selected">
+              <span class="filter-dropdown-dot"></span>
+              <span class="filter-dropdown-label">Category:</span>
+              <span class="filter-dropdown-current">All Projects (5)</span>
+            </div>
+            <svg class="filter-dropdown-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+
+          <ul class="filter-dropdown-menu" id="filter-dropdown-menu" role="listbox" aria-labelledby="filter-dropdown-btn">
+            <li class="filter-dropdown-item interactive active" role="option" aria-selected="true" data-filter="all">
+              <span>All Projects (5)</span>
+              <svg class="check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#00F0FF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </li>
+            <li class="filter-dropdown-item interactive" role="option" aria-selected="false" data-filter="agents">
+              <span>AI & Automation</span>
+              <svg class="check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#00F0FF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </li>
+            <li class="filter-dropdown-item interactive" role="option" aria-selected="false" data-filter="realtime">
+              <span>Real-Time Systems</span>
+              <svg class="check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#00F0FF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </li>
+            <li class="filter-dropdown-item interactive" role="option" aria-selected="false" data-filter="crm">
+              <span>Enterprise Portals & CRMs</span>
+              <svg class="check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#00F0FF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </li>
+            <li class="filter-dropdown-item interactive" role="option" aria-selected="false" data-filter="mobile">
+              <span>Mobile Applications</span>
+              <svg class="check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#00F0FF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </li>
+            <li class="filter-dropdown-item interactive" role="option" aria-selected="false" data-filter="graphics">
+              <span>Interactive 3D WebGL</span>
+              <svg class="check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#00F0FF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Projects Grid (4 Cards in One Row + Wide Bottom Banner) -->
+      <div class="cards-grid-4col" data-mf-stagger-animation="fade" data-mf-stagger-delay="100" data-mf-stagger-once="true">
+
+        <!-- Project 1: Nexus Workspace -->
+        <article class="card-3d spotlight-card project-item card-compact" data-category="agents" id="nexus" data-parallax="true" data-parallax-speed="0.04" data-parallax-speed-tablet="0.02" data-parallax-speed-mobile="0.01" data-parallax-max="8">
+          <div class="holo-frame">
+            <img src="/assets/project_swarm_nexus.jpg" alt="Nexus Workspace: Multi-Agent Automation Platform UI" loading="lazy">
+          </div>
+
+          <div class="card-header-meta">
+            <span class="badge badge-cyan" style="font-size: 0.625rem; padding: 2px 6px;">AI WORKFLOW · 01</span>
+            <span style="font-family: var(--font-mono); font-size: 0.65rem; color: var(--emerald-status);">Production Ready</span>
+          </div>
+
+          <h2 class="card-title">Nexus Workspace</h2>
+          <p class="card-desc">
+            An intelligent developer workspace platform orchestrating multi-agent tasks, live DAG visual workflows, and automated test execution.
+          </p>
+
+          <!-- Tech Badges -->
+          <div class="card-tags">
+            <span class="badge">React</span>
+            <span class="badge">TypeScript</span>
+            <span class="badge">Python</span>
+            <span class="badge">FastAPI</span>
+            <span class="badge">MCP</span>
+          </div>
+
+          <!-- Architecture Specs -->
+          <div class="card-specs">
+            <div><span style="color: var(--text-tertiary);">Protocol:</span> Model Context Protocol (MCP)</div>
+            <div><span style="color: var(--text-tertiary);">Streaming:</span> Server-Sent Events (SSE)</div>
+            <div><span style="color: var(--text-tertiary);">Latency:</span> &lt;20ms Event Dispatching</div>
+          </div>
+
+          <div class="card-footer">
+            <span style="font-family: var(--font-mono); font-size: 0.68rem; color: var(--text-tertiary);">Tested Architecture</span>
+            <a href="contact.html?project=nexus" class="btn btn-secondary">
+              Case Study →
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 2: Aether Stream -->
+        <article class="card-3d spotlight-card project-item card-compact" data-category="realtime" id="aether" data-parallax="true" data-parallax-speed="-0.04" data-parallax-speed-tablet="-0.02" data-parallax-speed-mobile="-0.01" data-parallax-max="8">
+          <div class="holo-frame">
+            <img src="/assets/workflow_automation_engine.jpg" alt="Aether Stream: Real-Time Event & Telemetry Dashboard" loading="lazy">
+          </div>
+
+          <div class="card-header-meta">
+            <span class="badge badge-cyan" style="font-size: 0.625rem; padding: 2px 6px;">REAL-TIME · 02</span>
+            <span style="font-family: var(--font-mono); font-size: 0.65rem; color: var(--cyan-primary);">Sub-10ms Stream</span>
+          </div>
+
+          <h2 class="card-title">Aether Stream</h2>
+          <p class="card-desc">
+            High-throughput event streaming engine and telemetry dashboard monitoring distributed services with 60 FPS hardware-accelerated charts.
+          </p>
+
+          <div class="card-tags">
+            <span class="badge">Next.js</span>
+            <span class="badge">TypeScript</span>
+            <span class="badge">FastAPI</span>
+            <span class="badge">WebSockets</span>
+            <span class="badge">Redis</span>
+          </div>
+
+          <div class="card-specs">
+            <div><span style="color: var(--text-tertiary);">Ingestion:</span> Asynchronous WebSockets</div>
+            <div><span style="color: var(--text-tertiary);">Rendering:</span> 60 FPS HTML5 Canvas Charts</div>
+            <div><span style="color: var(--text-tertiary);">Resilience:</span> Auto-Reconnection & Backoff</div>
+          </div>
+
+          <div class="card-footer">
+            <span style="font-family: var(--font-mono); font-size: 0.68rem; color: var(--text-tertiary);">Scalable Engine</span>
+            <a href="contact.html?project=aether" class="btn btn-secondary">
+              Case Study →
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 3: Horizon Portal -->
+        <article class="card-3d spotlight-card project-item card-compact" data-category="crm" id="horizon" data-parallax="true" data-parallax-speed="0.04" data-parallax-speed-tablet="0.02" data-parallax-speed-mobile="0.01" data-parallax-max="8">
+          <div class="holo-frame">
+            <img src="/assets/service_crm_system.jpg" alt="Horizon Portal: Enterprise CRM and Operations System" loading="lazy">
+          </div>
+
+          <div class="card-header-meta">
+            <span class="badge badge-emerald" style="font-size: 0.625rem; padding: 2px 6px;">ENTERPRISE · 03</span>
+            <span style="font-family: var(--font-mono); font-size: 0.65rem; color: var(--emerald-status);">Role-Based RBAC</span>
+          </div>
+
+          <h2 class="card-title">Horizon Operations Portal</h2>
+          <p class="card-desc">
+            Custom enterprise operations and CRM portal with virtualized high-volume data tables, audit logging, and automated billing workflows.
+          </p>
+
+          <div class="card-tags">
+            <span class="badge">React</span>
+            <span class="badge">Node.js</span>
+            <span class="badge">Express</span>
+            <span class="badge">PostgreSQL</span>
+            <span class="badge">Prisma</span>
+          </div>
+
+          <div class="card-specs">
+            <div><span style="color: var(--text-tertiary);">Database:</span> PostgreSQL Indexed Queries</div>
+            <div><span style="color: var(--text-tertiary);">Permissions:</span> Granular RBAC Role Trees</div>
+            <div><span style="color: var(--text-tertiary);">A11y:</span> WCAG 2.2 AA Compliant UI</div>
+          </div>
+
+          <div class="card-footer">
+            <span style="font-family: var(--font-mono); font-size: 0.68rem; color: var(--text-tertiary);">Internal Operations</span>
+            <a href="contact.html?project=horizon" class="btn btn-secondary">
+              Case Study →
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 4: Pulse Mobile -->
+        <article class="card-3d spotlight-card project-item card-compact" data-category="mobile" id="pulse" data-parallax="true" data-parallax-speed="-0.04" data-parallax-speed-tablet="-0.02" data-parallax-speed-mobile="-0.01" data-parallax-max="8">
+          <div class="holo-frame">
+            <img src="/assets/service_mobile_app.jpg" alt="Pulse Mobile: Offline-first cross-platform application interface" loading="lazy">
+          </div>
+
+          <div class="card-header-meta">
+            <span class="badge badge-violet" style="font-size: 0.625rem; padding: 2px 6px;">MOBILE · 04</span>
+            <span style="font-family: var(--font-mono); font-size: 0.65rem; color: var(--cyan-primary);">iOS & Android</span>
+          </div>
+
+          <h2 class="card-title">Pulse Field Operations</h2>
+          <p class="card-desc">
+            Offline-first mobile application designed for field teams to synchronize project telemetry, task statuses, and audits seamlessly.
+          </p>
+
+          <div class="card-tags">
+            <span class="badge">React Native</span>
+            <span class="badge">TypeScript</span>
+            <span class="badge">SQLite</span>
+            <span class="badge">TanStack Query</span>
+          </div>
+
+          <div class="card-specs">
+            <div><span style="color: var(--text-tertiary);">Offline:</span> Local SQLite Event Sync</div>
+            <div><span style="color: var(--text-tertiary);">Security:</span> Biometric Keyring Storage</div>
+            <div><span style="color: var(--text-tertiary);">Physics:</span> 60 / 120 FPS Native Gestures</div>
+          </div>
+
+          <div class="card-footer">
+            <span style="font-family: var(--font-mono); font-size: 0.68rem; color: var(--text-tertiary);">Native Bridges</span>
+            <a href="contact.html?project=pulse" class="btn btn-secondary">
+              Case Study →
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 5: Spatial Canvas (Wide Spotlight Banner spanning bottom) -->
+        <article class="card-3d spotlight-card project-item service-banner-compact" data-category="graphics" id="spatial" data-parallax="true" data-parallax-speed="0.03" data-parallax-speed-tablet="0.02" data-parallax-speed-mobile="0.01" data-parallax-max="6">
+          <div class="banner-grid">
+            <div class="holo-frame" style="height: 130px; border-radius: var(--radius-sm);">
+              <img src="/assets/hero_agentic_core.jpg" alt="Spatial Canvas: Interactive Three.js WebGL Core" loading="lazy">
+            </div>
+
+            <div style="display: flex; flex-direction: column; gap: 8px;">
+              <div class="card-header-meta">
+                <span class="badge badge-cyan" style="font-size: 0.65rem; padding: 2px 7px;">CREATIVE TECH · 05</span>
+                <span style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--cyan-primary);">60.0 FPS Locked Canvas</span>
+              </div>
+              <h2 style="font-size: 1.1rem; font-weight: 600; margin: 0;">Spatial Canvas: Hardware-Accelerated 3D Core</h2>
+              <p style="font-size: 0.775rem; line-height: 1.45; color: var(--text-secondary); margin: 0;">
+                Interactive 3D WebGL visualization environment built for browser product configuration, shader animations, and responsive canvas scaling with zero external runtime overhead.
+              </p>
+
+              <div class="card-tags">
+                <span class="badge">Three.js</span>
+                <span class="badge">WebGL 2.0</span>
+                <span class="badge">GLSL Shaders</span>
+                <span class="badge">Canvas API</span>
+                <span class="badge">Vite</span>
+              </div>
+
+              <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border-subtle); padding-top: 8px; margin-top: 2px;">
+                <span style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--text-tertiary);">Zero Memory Leaks · Responsive DPR</span>
+                <a href="contact.html?project=spatial" class="btn btn-primary" style="padding: 5px 14px; font-size: 0.775rem;">
+                  Inquire About 3D Builds →
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Collaboration CTA Section -->
+      <section style="margin-top: var(--space-16); padding: clamp(28px, 4vw, 44px); background: linear-gradient(135deg, rgba(10, 10, 16, 0.95), rgba(15, 15, 24, 0.95)); border: 1px solid var(--border-medium); border-radius: var(--radius-lg); position: relative; overflow: hidden;" data-mf-animation="fade-up">
+        
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 24px; position: relative; z-index: 2;">
+          <div style="max-width: 600px;">
+            <div style="display: flex; gap: 8px; margin-bottom: 10px;">
+              <span class="badge badge-cyan">ENGINEERING COLLABORATION</span>
+              <span class="badge badge-emerald">OPEN FOR SDE-1 ROLES</span>
+            </div>
+            <h2 style="font-size: clamp(1.5rem, 2.5vw, 2.1rem); margin-bottom: 8px;">Have an Engineering Challenge?</h2>
+            <p style="font-size: 0.95rem; line-height: 1.6; color: var(--text-secondary);">
+              Whether you are hiring for full-time engineering positions or need scalable web platforms built from the ground up—let's discuss your timeline and architectural goals.
+            </p>
+          </div>
+
+          <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+            <a href="contact.html" class="btn btn-primary" style="padding: 12px 24px; font-size: 0.95rem;">
+              Get in Touch →
+            </a>
+            <a href="workflow.html" class="btn btn-secondary" style="padding: 12px 20px; font-size: 0.95rem;">
+              View Development Workflow
+            </a>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="index.html" class="brand-logo" style="margin-bottom: 12px;" aria-label="Jashwanth Raj - Home">
+          <div class="brand-glyph">
+            <img src="/assets/jashwanth-logo.jpg" alt="Jashwanth Raj Logo" />
+          </div>
+          <span>JASHWANTH<span style="color: var(--cyan-primary);"> RAJ</span></span>
+        </a>
+        <p style="font-size: 0.875rem; color: var(--text-tertiary); max-width: 42ch; margin-top: 8px;">
+          Jashwanth Raj — SDE-1 Full-Stack Developer & Software Engineer. Dedicated to building scalable web applications, resilient backend architectures, and intelligent digital experiences.
+        </p>
+        <div style="display: flex; align-items: center; gap: 8px; margin-top: 16px;">
+          <span class="pulse-dot"></span>
+          <span style="font-size: 0.775rem; font-family: var(--font-mono); color: var(--text-secondary);">
+            AVAILABILITY: OPEN FOR FULL-TIME SDE-1 ROLES & SELECT CLIENT PROJECTS
+          </span>
+        </div>
+      </div>
+
+      <div>
+        <h4 style="font-size: 0.875rem; text-transform: uppercase; font-family: var(--font-mono); color: var(--text-primary); margin-bottom: 14px; letter-spacing: 0.05em;">
+          Navigation
+        </h4>
+        <ul style="list-style: none; display: flex; flex-direction: column; gap: 10px; font-size: 0.875rem;">
+          <li><a href="index.html" class="footer-link">Overview</a></li>
+          <li><a href="services.html" class="footer-link">Services & Solutions</a></li>
+          <li><a href="workflow.html" class="footer-link">Development Workflow</a></li>
+          <li><a href="skills.html" class="footer-link">Technical Skills</a></li>
+          <li><a href="contact.html" class="footer-link">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 style="font-size: 0.875rem; text-transform: uppercase; font-family: var(--font-mono); color: var(--text-primary); margin-bottom: 14px; letter-spacing: 0.05em;">
+          Direct Connection
+        </h4>
+        <p style="font-size: 0.825rem; color: var(--text-tertiary); margin-bottom: 14px;">
+          Reach out directly for opportunities or technical consultations.
+        </p>
+        <div style="display: flex; gap: 12px; align-items: center;">
+          <a href="mailto:jashwanthraj0310@gmail.com" class="social-icon-btn email" aria-label="Email Jashwanth Raj" title="jashwanthraj0310@gmail.com">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#00F0FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+            </svg>
+          </a>
+
+          <a href="https://www.linkedin.com/in/jashwanthraj/" target="_blank" rel="noopener noreferrer" class="social-icon-btn linkedin" aria-label="Jashwanth Raj on LinkedIn" title="LinkedIn Profile">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="#0A66C2">
+              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" style="border-top: 1px solid var(--border-subtle); margin-top: var(--space-8); padding-top: var(--space-6); font-size: 0.775rem; color: var(--text-tertiary); font-family: var(--font-mono); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
+      <div>© 2026 Jashwanth Raj. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script type="module">
+    import { initCustomCursor } from '/src/js/cursor.js';
+    import { setupInteractiveSounds } from '/src/js/audio.js';
+    import { initCommandPalette } from '/src/js/command-palette.js';
+    import { initNav } from '/src/js/nav.js';
+    import { initMotionFlow } from '/src/js/motionflow-setup.js';
+    import { initParallaxEngine } from '/src/js/parallax-engine.js';
+
+    document.addEventListener('DOMContentLoaded', () => {
+      initNav();
+      initCustomCursor();
+      setupInteractiveSounds();
+      initCommandPalette();
+      initParallaxEngine();
+      const mf = initMotionFlow();
+
+      // Category Filter & Dropdown Logic
+      const filterBtns = document.querySelectorAll('.filter-btn');
+      const dropdownItems = document.querySelectorAll('.filter-dropdown-item');
+      const dropdownContainer = document.querySelector('.filter-dropdown-container');
+      const dropdownTrigger = document.getElementById('filter-dropdown-btn');
+      const dropdownCurrent = document.querySelector('.filter-dropdown-current');
+      const items = document.querySelectorAll('.project-item');
+
+      function setFilter(filter, label) {
+        // Sync desktop pills
+        filterBtns.forEach(btn => {
+          if (btn.getAttribute('data-filter') === filter) {
+            btn.classList.add('active', 'badge-cyan');
+          } else {
+            btn.classList.remove('active', 'badge-cyan');
+          }
+        });
+
+        // Sync mobile dropdown items
+        dropdownItems.forEach(item => {
+          const isSelected = item.getAttribute('data-filter') === filter;
+          item.classList.toggle('active', isSelected);
+          item.setAttribute('aria-selected', isSelected ? 'true' : 'false');
+        });
+
+        // Update dropdown display text
+        if (dropdownCurrent && label) {
+          dropdownCurrent.textContent = label;
+        }
+
+        // Filter cards
+        items.forEach(item => {
+          const cat = item.getAttribute('data-category');
+          const shouldShow = (filter === 'all' || cat === filter);
+          if (shouldShow) {
+            item.classList.remove('is-hidden');
+            item.style.removeProperty('display');
+          } else {
+            item.classList.add('is-hidden');
+            item.style.setProperty('display', 'none', 'important');
+          }
+        });
+
+        // Refresh motion engines
+        if (mf && typeof mf.refresh === 'function') {
+          mf.refresh();
+        }
+        if (window.parallaxEngine && typeof window.parallaxEngine.refresh === 'function') {
+          window.parallaxEngine.refresh();
+        }
+      }
+
+      // Dropdown toggle
+      if (dropdownTrigger && dropdownContainer) {
+        dropdownTrigger.addEventListener('click', (e) => {
+          e.stopPropagation();
+          const isOpen = dropdownContainer.classList.toggle('open');
+          dropdownTrigger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        });
+
+        // Close on outside click
+        document.addEventListener('click', (e) => {
+          if (!dropdownContainer.contains(e.target)) {
+            dropdownContainer.classList.remove('open');
+            dropdownTrigger.setAttribute('aria-expanded', 'false');
+          }
+        });
+
+        // Close on Escape
+        document.addEventListener('keydown', (e) => {
+          if (e.key === 'Escape' && dropdownContainer.classList.contains('open')) {
+            dropdownContainer.classList.remove('open');
+            dropdownTrigger.setAttribute('aria-expanded', 'false');
+            dropdownTrigger.focus();
+          }
+        });
+      }
+
+      // Dropdown item selection
+      dropdownItems.forEach(item => {
+        item.addEventListener('click', (e) => {
+          e.stopPropagation();
+          const filter = item.getAttribute('data-filter');
+          const span = item.querySelector('span');
+          const label = span ? span.textContent.trim() : item.textContent.trim();
+          setFilter(filter, label);
+          if (dropdownContainer && dropdownTrigger) {
+            dropdownContainer.classList.remove('open');
+            dropdownTrigger.setAttribute('aria-expanded', 'false');
+          }
+        });
+      });
+
+      // Desktop pill selection
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const filter = btn.getAttribute('data-filter');
+          const label = btn.textContent.trim();
+          setFilter(filter, label);
+        });
+      });
+    });
+  </script>
+</body>
+</html>

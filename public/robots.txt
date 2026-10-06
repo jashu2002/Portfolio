@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Canonical Sitemap Location
+Sitemap: https://jashwanthraj.dev/sitemap.xml

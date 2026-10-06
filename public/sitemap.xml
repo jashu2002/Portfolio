@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <!-- Homepage / Developer Profile -->
+  <url>
+    <loc>https://jashwanthraj.dev/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://jashwanthraj.dev/assets/jashwanth-logo.jpg</image:loc>
+      <image:title>Jashwanth Raj - Brand Emblem</image:title>
+      <image:caption>SDE-1 Full-Stack Developer and Autonomous AI Systems Engineer</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Services & Solutions -->
+  <url>
+    <loc>https://jashwanthraj.dev/services.html</loc>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Projects & Case Studies -->
+  <url>
+    <loc>https://jashwanthraj.dev/projects.html</loc>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Autonomous Workflow & Multi-Agent Architecture -->
+  <url>
+    <loc>https://jashwanthraj.dev/workflow.html</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Technical Arsenal & Skills Matrix -->
+  <url>
+    <loc>https://jashwanthraj.dev/skills.html</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Direct Transmission & Contact Channels -->
+  <url>
+    <loc>https://jashwanthraj.dev/contact.html</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+</urlset>

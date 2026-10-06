@@ -42,6 +42,10 @@ export function initCommandPalette() {
           <span><strong>Contact:</strong> Get in Touch & Inquiries</span>
           <span class="badge">Page</span>
         </li>
+        <li class="cmd-item" data-action="replay-intro">
+          <span><strong>Replay Intro:</strong> Cinematic ECG & Galaxy Experience</span>
+          <span class="badge badge-cyan">Visual</span>
+        </li>
         <li class="cmd-item" data-action="toggle-audio">
           <span><strong>Toggle Sound:</strong> Audio Synthesizer</span>
           <span class="badge badge-cyan">Audio</span>
@@ -114,6 +118,17 @@ export function initCommandPalette() {
 
       if (action === 'goto' && url) {
         window.location.href = url;
+      } else if (action === 'replay-intro') {
+        closePalette();
+        if (window.location.pathname.endsWith('index.html') || window.location.pathname === '/' || window.location.pathname.endsWith('/Portfolio/')) {
+          if (window.replayCinematicIntro) {
+            window.replayCinematicIntro();
+          } else {
+            window.location.search = '?replay=true';
+          }
+        } else {
+          window.location.href = 'index.html?replay=true';
+        }
       } else if (action === 'toggle-audio') {
         sound.toggleMute();
         closePalette();

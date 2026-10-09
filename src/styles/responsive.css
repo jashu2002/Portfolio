@@ -121,6 +121,15 @@
 }
 
 @media (max-width: 768px) {
+  /* Navigation & Mobile Header */
+  .site-header {
+    height: 64px !important;
+  }
+
+  .site-header .nav-container {
+    padding-inline: 14px !important;
+  }
+
   .nav-links {
     display: none !important;
   }
@@ -131,22 +140,22 @@
 
   .mobile-nav-toggle {
     display: flex !important;
-    width: 40px !important;
-    height: 40px !important;
-    min-width: 40px !important;
-    padding: 9px !important;
+    width: 38px !important;
+    height: 38px !important;
+    min-width: 38px !important;
+    padding: 8px !important;
     flex-shrink: 0 !important;
   }
 
-  /* Audio button: High-contrast 40px icon button, always visible */
+  /* Audio button: High-contrast 38px icon button, always visible */
   .audio-btn {
     display: inline-flex !important;
     align-items: center !important;
     justify-content: center !important;
     padding: 0 !important;
-    width: 40px !important;
-    height: 40px !important;
-    min-width: 40px !important;
+    width: 38px !important;
+    height: 38px !important;
+    min-width: 38px !important;
     border-radius: var(--radius-md) !important;
     flex-shrink: 0 !important;
   }
@@ -169,86 +178,198 @@
     flex-shrink: 0 !important;
   }
 
-  .site-header .nav-container {
-    padding-inline: 14px;
+  /* Spacing: Eliminate all AI-generated/template giant dead space voids */
+  #main-content {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
   }
 
-  /* Watermark & ambient lights containment */
+  /* Subpages: container directly under main-content sits right under 64px navbar with clean 10px breathing room */
+  #main-content > .container:first-child:not(.hero-section) {
+    padding-top: 74px !important;
+  }
+
+  /* Tighten all section vertical spacing */
+  section,
+  section[style*="margin-top"],
+  #live-sandbox-section,
+  #services-section,
+  .workflow-pipeline,
+  .terminal-card {
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+  }
+
+  /* Watermarks & Ambient Lights - Beautiful, fully animated & contained on mobile */
   .parallax-watermark {
-    display: none !important;
+    display: block !important;
+    font-size: clamp(2.2rem, 8vw, 3.4rem) !important;
+    opacity: 0.045 !important;
+    overflow: hidden !important;
+    max-width: 100vw !important;
+    pointer-events: none !important;
+    white-space: nowrap !important;
   }
 
   .ambient-spotlight {
+    display: block !important;
     width: 100vw !important;
     max-width: 100vw !important;
     left: 0 !important;
     margin-left: 0 !important;
+    opacity: 0.65 !important;
+    filter: blur(70px) !important;
   }
 
   .ambient-spotlight-secondary {
-    display: none !important;
+    display: block !important;
+    position: absolute !important;
+    width: 100vw !important;
+    max-width: 100vw !important;
+    top: 35% !important;
+    left: 0 !important;
+    height: 380px !important;
+    background: radial-gradient(circle, rgba(168, 85, 247, 0.08) 0%, transparent 65%) !important;
+    filter: blur(80px) !important;
+    opacity: 0.5 !important;
+    pointer-events: none !important;
   }
 
   /* Hero Section on Mobile */
   .hero-section {
-    padding-top: 86px;
-    padding-bottom: 32px;
-    min-height: auto;
+    padding-top: 74px !important;
+    padding-bottom: 14px !important;
+    min-height: auto !important;
+  }
+
+  .hero-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    gap: 14px !important;
+    width: 100% !important;
+  }
+
+  .hero-content {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-inline: auto !important;
+    gap: 12px !important;
+  }
+
+  /* Hero Status Badges */
+  .hero-content > div:first-child {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin-inline: auto !important;
+    flex-wrap: wrap !important;
+    gap: 8px !important;
   }
 
   #hero-heading {
-    min-height: auto;
-    font-size: clamp(1.75rem, 6.5vw, 2.3rem);
-    line-height: 1.15;
-    letter-spacing: -0.03em;
+    min-height: auto !important;
+    font-size: clamp(1.35rem, 5.2vw, 1.75rem) !important;
+    line-height: 1.15 !important;
+    letter-spacing: -0.025em !important;
+    text-align: center !important;
+    width: 100% !important;
+    margin-inline: auto !important;
+    word-break: normal !important;
+    overflow-wrap: break-word !important;
+  }
+
+  .hero-line {
+    display: block !important;
+    text-align: center !important;
+    width: 100% !important;
   }
 
   .hero-typing-line {
-    white-space: normal;
+    display: block !important;
+    text-align: center !important;
+    margin-inline: auto !important;
+    min-height: 1.25em !important;
+    width: 100% !important;
   }
 
+  .hero-intro-text {
+    text-align: center !important;
+    margin-inline: auto !important;
+    max-width: 90% !important;
+    font-size: 0.95rem !important;
+    line-height: 1.55 !important;
+  }
+
+  /* All Hero Buttons Placed Center */
   .hero-actions {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    max-width: 380px;
-    gap: 10px;
-    justify-content: center;
-    margin-inline: auto;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    max-width: 320px !important;
+    gap: 10px !important;
+    margin-inline: auto !important;
   }
 
   .hero-actions .btn {
-    padding: 11px 16px;
-    font-size: 0.88rem;
-    min-height: 44px;
-    box-sizing: border-box;
+    width: 100% !important;
+    max-width: 320px !important;
+    padding: 11px 16px !important;
+    font-size: 0.88rem !important;
+    min-height: 44px !important;
+    justify-content: center !important;
+    text-align: center !important;
+    margin: 0 !important;
+    flex: none !important;
   }
 
   #btn-hero-contact {
-    width: 100%;
-    flex: 1 1 100%;
-    justify-content: center;
-    font-weight: 600;
+    width: 100% !important;
+    justify-content: center !important;
+    font-weight: 600 !important;
   }
 
   .hero-actions .btn:not(#btn-hero-contact) {
-    flex: 1 1 calc(50% - 6px);
-    justify-content: center;
+    width: 100% !important;
+    justify-content: center !important;
   }
 
   .hero-pills {
-    justify-content: center;
-    gap: 10px;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 8px !important;
+    margin-inline: auto !important;
+    text-align: center !important;
+  }
+
+  /* Hero 3D WebGL Canvas */
+  .hero-visual {
+    margin-top: 0 !important;
+    height: 220px !important;
+    min-height: 220px !important;
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
   }
 
   #hero-canvas {
-    height: 260px !important;
-    max-height: 35vh !important;
+    width: 100% !important;
+    max-width: 280px !important;
+    height: 220px !important;
+    margin-inline: auto !important;
   }
 
   .hero-visual::before {
-    width: 220px !important;
-    height: 220px !important;
+    width: 190px !important;
+    height: 190px !important;
   }
 
   /* Multi-column grid collapses - Stack 1-by-1 vertically */
@@ -259,20 +380,191 @@
   .service-preview-grid,
   .steps-process-grid,
   .cards-grid-4col,
-  .contact-input-grid {
+  .contact-input-grid,
+  .projects-grid,
+  .simulator-nodes {
     grid-template-columns: 1fr !important;
   }
 
   .contact-grid {
-    gap: var(--space-8);
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 20px !important;
+  }
+
+  /* Contact Page Left Column Elements Centered */
+  .contact-grid > div:first-child {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    width: 100% !important;
+  }
+
+  .contact-grid > div:first-child > div:first-child {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    gap: 10px !important;
+    margin-inline: auto !important;
+  }
+
+  .contact-grid > div:first-child > div:first-child > div {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  .contact-grid > div:first-child > div:first-child > div > div:first-child {
+    justify-content: center !important;
+  }
+
+  .contact-grid h1 {
+    text-align: center !important;
+  }
+
+  .contact-grid p {
+    text-align: center !important;
+    margin-inline: auto !important;
+  }
+
+  /* Contact Direct Channels Buttons Centered */
+  .contact-grid div:has(> .social-icon-btn) {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin-inline: auto !important;
+    gap: 12px !important;
+  }
+
+  .contact-grid .card-3d:not(.contact-form-card) {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    margin-inline: auto !important;
+    width: 100% !important;
+    max-width: 360px !important;
+    padding: 14px 16px !important;
+  }
+
+  .contact-grid .card-3d:not(.contact-form-card) > div:first-child {
+    justify-content: center !important;
+  }
+
+  .contact-form-card {
+    padding: 20px 16px !important;
   }
 
   .workflow-comparison-grid {
     gap: var(--space-6);
   }
 
-  .contact-form-card {
-    padding: 22px 18px !important;
+  /* CTA Banners across all pages (Services, Projects, etc.) Centered */
+  .cta-banner-section {
+    padding: 24px 16px !important;
+    margin-block: 20px !important;
+    text-align: center !important;
+  }
+
+  .cta-banner-container {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    gap: 16px !important;
+    width: 100% !important;
+  }
+
+  .cta-banner-container > div:first-child {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .cta-banner-container > div:first-child > div:first-child {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin-inline: auto !important;
+    flex-wrap: wrap !important;
+    gap: 8px !important;
+  }
+
+  .cta-banner-container h2 {
+    text-align: center !important;
+  }
+
+  .cta-banner-container p {
+    text-align: center !important;
+    margin-inline: auto !important;
+  }
+
+  .cta-banner-container > div:last-child {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    max-width: 320px !important;
+    margin-inline: auto !important;
+    gap: 10px !important;
+  }
+
+  .cta-banner-container .btn {
+    width: 100% !important;
+    max-width: 320px !important;
+    justify-content: center !important;
+    text-align: center !important;
+    margin: 0 !important;
+  }
+
+  section > .card-3d[style*="display: flex"],
+  section .card-3d[style*="display: flex"] {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    padding: 24px 18px !important;
+    gap: 16px !important;
+  }
+
+  section .card-3d div:has(> .badge) {
+    display: flex !important;
+    justify-content: center !important;
+    margin-inline: auto !important;
+    flex-wrap: wrap !important;
+  }
+
+  section .card-3d h2 {
+    text-align: center !important;
+  }
+
+  section .card-3d p {
+    text-align: center !important;
+    margin-inline: auto !important;
+  }
+
+  section .card-3d div:has(> .btn) {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    margin-inline: auto !important;
+    gap: 10px !important;
+  }
+
+  section .card-3d .btn {
+    width: 100% !important;
+    max-width: 300px !important;
+    justify-content: center !important;
+    text-align: center !important;
+    margin-inline: auto !important;
   }
 
   /* Sticky Glass Subnavbar / Category Filter Bar - Mobile Dropdown */
@@ -291,32 +583,124 @@
     display: block !important;
   }
 
-  .simulator-nodes {
-    grid-template-columns: 1fr;
+  /* All Card Footers & Action Buttons Centered on Mobile */
+  .card-footer,
+  .card-compact .card-footer {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 8px !important;
+    text-align: center !important;
   }
 
-  #main-content {
-    padding-bottom: 0px !important;
+  .card-footer .btn,
+  .card-compact .card-footer .btn {
+    width: 100% !important;
+    max-width: 260px !important;
+    justify-content: center !important;
+    text-align: center !important;
+    margin-inline: auto !important;
   }
 
+  .service-banner-compact {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    gap: 12px !important;
+  }
+
+  .service-banner-compact .btn {
+    width: 100% !important;
+    max-width: 280px !important;
+    justify-content: center !important;
+    margin-inline: auto !important;
+  }
+
+  /* Global Footer: 1-Column Centered Stacking */
   .site-footer {
     margin-top: 24px !important;
-    padding-top: 24px !important;
+    padding-top: 22px !important;
+    padding-bottom: 24px !important;
+    text-align: center !important;
   }
 
   .footer-grid {
-    grid-template-columns: 1fr;
-    gap: var(--space-6);
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    gap: 20px !important;
+    width: 100% !important;
+  }
+
+  .footer-grid > div {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    width: 100% !important;
+  }
+
+  .footer-grid .brand-logo {
+    justify-content: center !important;
+    margin-inline: auto !important;
+  }
+
+  .footer-grid p {
+    text-align: center !important;
+    margin-inline: auto !important;
+    max-width: 90% !important;
+  }
+
+  .footer-grid div:has(> .pulse-dot) {
+    justify-content: center !important;
+    margin-inline: auto !important;
+  }
+
+  .footer-grid ul {
+    align-items: center !important;
+    text-align: center !important;
+    padding: 0 !important;
+    margin-inline: auto !important;
+  }
+
+  .footer-grid div:has(> .social-icon-btn) {
+    display: flex !important;
+    justify-content: center !important;
+    margin-inline: auto !important;
+  }
+
+  .site-footer > .container:last-child {
+    justify-content: center !important;
+    text-align: center !important;
+    margin-top: 16px !important;
+    padding-top: 14px !important;
   }
 
   .stats-strip {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 10px !important;
+    padding: 12px !important;
+    margin-block: 16px !important;
+  }
+
+  /* Tactile Mobile Transitions & Micro-Interactions */
+  .btn:active,
+  .card-3d:active,
+  .social-icon-btn:active,
+  .audio-btn:active,
+  .mobile-nav-toggle:active {
+    transform: scale(0.97) !important;
+    transition: transform 0.1s ease !important;
   }
 
   /* Interactive Developer Terminal Mobile Overhaul */
   .terminal-card {
     padding: 16px 12px !important;
     border-radius: var(--radius-md) !important;
+    margin-block: 16px !important;
   }
 
   .terminal-console {
@@ -354,6 +738,7 @@
   .terminal-quick-chips {
     padding: 6px 10px !important;
     gap: 5px !important;
+    justify-content: center !important;
   }
 
   .terminal-input-wrap {
@@ -427,16 +812,17 @@
   }
 
   .stats-strip {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
   }
 
   .hero-actions {
-    width: 100%;
+    width: 100% !important;
+    max-width: 100% !important;
   }
 
-  .hero-actions .btn:not(#btn-hero-contact) {
-    font-size: 0.825rem;
-    padding: 10px 12px;
+  .hero-actions .btn {
+    font-size: 0.85rem !important;
+    padding: 10px 14px !important;
   }
 }
 

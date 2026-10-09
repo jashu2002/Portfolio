@@ -192,6 +192,7 @@ export class ParallaxEngine {
     };
 
     window.addEventListener('scroll', this.scrollListener, { passive: true });
+    window.addEventListener('touchmove', this.scrollListener, { passive: true });
     window.addEventListener('resize', this.resizeListener, { passive: true });
   }
 
@@ -201,7 +202,10 @@ export class ParallaxEngine {
   }
 
   destroy() {
-    if (this.scrollListener) window.removeEventListener('scroll', this.scrollListener);
+    if (this.scrollListener) {
+      window.removeEventListener('scroll', this.scrollListener);
+      window.removeEventListener('touchmove', this.scrollListener);
+    }
     if (this.resizeListener) window.removeEventListener('resize', this.resizeListener);
     if (this.rafId) cancelAnimationFrame(this.rafId);
     this.items.forEach(item => {

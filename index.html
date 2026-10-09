@@ -61,18 +61,20 @@
   <!-- Core & Cinematic Styles -->
   <link rel="stylesheet" href="/src/styles/main.css">
   <link rel="stylesheet" href="/src/styles/cinematic.css">
-  <link rel="stylesheet" href="/src/styles/components.css?v=20261002">
+  <link rel="stylesheet" href="/src/styles/components.css">
   <link rel="stylesheet" href="/src/styles/responsive.css">
   <style>
-    #hero-heading {
-      min-height: 0 !important;
-      margin-bottom: 0 !important;
-      line-height: 1.08 !important;
-    }
-    #hero-heading + p,
-    .hero-intro-text {
-      margin-top: -6px !important;
-      margin-bottom: 0 !important;
+    @media (min-width: 769px) {
+      #hero-heading {
+        min-height: 0 !important;
+        margin-bottom: 0 !important;
+        line-height: 1.08 !important;
+      }
+      #hero-heading + p,
+      .hero-intro-text {
+        margin-top: -6px !important;
+        margin-bottom: 0 !important;
+      }
     }
   </style>
 </head>

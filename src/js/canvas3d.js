@@ -117,17 +117,33 @@ export function init3DCanvas(canvasId = 'hero-canvas') {
   violetLight.position.set(-12, -10, 10);
   scene.add(violetLight);
 
-  // Mouse Parallax Interaction
+  // Mouse & Touch Interaction
   let mouseX = 0;
   let mouseY = 0;
   let targetX = 0;
   let targetY = 0;
 
-  window.addEventListener('mousemove', (e) => {
+  function updatePointer(clientX, clientY) {
     const windowHalfX = window.innerWidth / 2;
     const windowHalfY = window.innerHeight / 2;
-    mouseX = (e.clientX - windowHalfX) * 0.0006;
-    mouseY = (e.clientY - windowHalfY) * 0.0006;
+    mouseX = (clientX - windowHalfX) * 0.0006;
+    mouseY = (clientY - windowHalfY) * 0.0006;
+  }
+
+  window.addEventListener('mousemove', (e) => {
+    updatePointer(e.clientX, e.clientY);
+  }, { passive: true });
+
+  window.addEventListener('touchmove', (e) => {
+    if (e.touches && e.touches.length > 0) {
+      updatePointer(e.touches[0].clientX, e.touches[0].clientY);
+    }
+  }, { passive: true });
+
+  window.addEventListener('touchstart', (e) => {
+    if (e.touches && e.touches.length > 0) {
+      updatePointer(e.touches[0].clientX, e.touches[0].clientY);
+    }
   }, { passive: true });
 
   // Resize handler
@@ -156,29 +172,39 @@ export function init3DCanvas(canvasId = 'hero-canvas') {
     if (!isVisible) return;
 
     const delta = clock.getDelta();
+    const elapsedTime = clock.getElapsedTime();
 
-    // Smooth camera tilt towards mouse
-    targetX += (mouseX - targetX) * 0.05;
-    targetY += (mouseY - targetY) * 0.05;
+    // Autonomous gentle orbital breathing motion (ensures mobile is always alive & animated)
+    const autoFloatX = Math.sin(elapsedTime * 0.7) * 0.4;
+    const autoFloatY = Math.cos(elapsedTime * 0.5) * 0.3;
 
-    camera.position.x = targetX * 4;
-    camera.position.y = -targetY * 4;
+    // Smooth camera tilt towards mouse/touch + auto-float
+    targetX += (mouseX - targetX) * 0.06;
+    targetY += (mouseY - targetY) * 0.06;
+
+    camera.position.x = (targetX * 4) + autoFloatX;
+    camera.position.y = (-targetY * 4) + autoFloatY;
     camera.lookAt(scene.position);
 
-    // Rotations
-    coreMesh.rotation.y += delta * 0.2;
-    coreMesh.rotation.x += delta * 0.1;
+    // Rotations & dynamic energy pulse
+    coreMesh.rotation.y += delta * 0.22;
+    coreMesh.rotation.x += delta * 0.12;
 
-    wireMesh.rotation.y += delta * 0.2;
-    wireMesh.rotation.x += delta * 0.1;
+    wireMesh.rotation.y += delta * 0.22;
+    wireMesh.rotation.x += delta * 0.12;
 
-    ring1.rotation.z += delta * 0.35;
-    ring1.rotation.y += delta * 0.15;
+    ring1.rotation.z += delta * 0.38;
+    ring1.rotation.y += delta * 0.16;
 
-    ring2.rotation.z -= delta * 0.25;
-    ring2.rotation.x -= delta * 0.2;
+    ring2.rotation.z -= delta * 0.28;
+    ring2.rotation.x -= delta * 0.22;
 
-    particleSystem.rotation.y += delta * 0.08;
+    particleSystem.rotation.y += delta * 0.09;
+    particleSystem.rotation.z += delta * 0.04;
+
+    // Subtle breathing light intensity
+    cyanLight.intensity = 48 + Math.sin(elapsedTime * 1.5) * 8;
+    violetLight.intensity = 38 + Math.cos(elapsedTime * 1.5) * 6;
 
     renderer.render(scene, camera);
   }

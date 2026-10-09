@@ -105,10 +105,25 @@
   
   .hero-content {
     align-items: center;
+    text-align: center;
+    margin-inline: auto;
+  }
+
+  .hero-actions {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin-inline: auto !important;
+  }
+
+  .hero-pills {
+    justify-content: center !important;
+    align-items: center !important;
+    margin-inline: auto !important;
   }
   
   .hero-visual {
-    margin-top: var(--space-6);
+    margin-top: var(--space-4);
   }
 
   .simulator-nodes {
@@ -120,7 +135,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 860px) {
   /* Navigation & Mobile Header */
   .site-header {
     height: 64px !important;
@@ -189,15 +204,42 @@
     padding-top: 74px !important;
   }
 
-  /* Tighten all section vertical spacing */
+  /* Tighten subpage headers & remove huge empty void under navbar */
+  #main-content > .container:first-child:not(.hero-section) > div:first-child,
+  .container > div:first-child[style*="margin-bottom"] {
+    margin-bottom: 12px !important;
+  }
+
+  /* Images & Holo-frames: Tight, balanced proportions on mobile with NO huge empty gaps */
+  .holo-frame {
+    height: 180px !important;
+    max-height: 180px !important;
+    margin-bottom: 12px !important;
+  }
+
+  .service-banner-compact .holo-frame {
+    height: 120px !important;
+    max-height: 120px !important;
+  }
+
+  /* Tighten all section and element vertical spacing */
   section,
   section[style*="margin-top"],
+  section[style*="margin-bottom"],
+  div[style*="margin-top"],
+  div[style*="margin-bottom"],
+  [style*="margin-top: var(--space-"],
+  [style*="margin-bottom: var(--space-"],
   #live-sandbox-section,
   #services-section,
   .workflow-pipeline,
-  .terminal-card {
-    margin-top: 20px !important;
-    margin-bottom: 20px !important;
+  .terminal-card,
+  .cta-banner-section,
+  .service-preview-grid,
+  .cards-grid-4col,
+  .projects-grid {
+    margin-top: 16px !important;
+    margin-bottom: 16px !important;
   }
 
   /* Watermarks & Ambient Lights - Beautiful, fully animated & contained on mobile */
@@ -616,6 +658,65 @@
     max-width: 280px !important;
     justify-content: center !important;
     margin-inline: auto !important;
+  }
+
+  /* Universal Action Button & Container Centering on Mobile */
+  .btn,
+  a.btn,
+  button.btn {
+    display: inline-flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+    margin-inline: auto !important;
+  }
+
+  /* Centering for all section headers with buttons (e.g. Featured Projects header) */
+  div[style*="justify-content: space-between"]:has(> a.btn),
+  div[style*="justify-content: space-between"]:has(> div > h2):has(> a.btn) {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    gap: 12px !important;
+    width: 100% !important;
+  }
+
+  div[style*="justify-content: space-between"]:has(> a.btn) > div {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  /* Centering for service preview cards */
+  .service-preview-grid article > div:last-child {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    gap: 6px !important;
+    width: 100% !important;
+  }
+
+  .service-preview-grid article a,
+  .service-preview-grid article .btn-ghost {
+    display: inline-flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin-inline: auto !important;
+    text-align: center !important;
+  }
+
+  /* 3-Step Lifecycle Header button */
+  .card-3d > div[style*="justify-content: space-between"]:has(> a.btn) {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    gap: 14px !important;
   }
 
   /* Global Footer: 1-Column Centered Stacking */

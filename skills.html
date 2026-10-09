@@ -33,10 +33,10 @@
   <meta name="twitter:description" content="Technical proficiencies and skills matrix of Jashwanth Raj.">
   <meta name="twitter:image" content="https://jashwanthraj.dev/assets/jashwanth-logo.jpg">
 
-  <link rel="stylesheet" href="/src/styles/main.css">
-  <link rel="stylesheet" href="/src/styles/cinematic.css">
-  <link rel="stylesheet" href="/src/styles/components.css">
-  <link rel="stylesheet" href="/src/styles/responsive.css">
+  <link rel="stylesheet" href="/src/styles/main.css?v=20261010-responsive">
+  <link rel="stylesheet" href="/src/styles/cinematic.css?v=20261010-responsive">
+  <link rel="stylesheet" href="/src/styles/components.css?v=20261010-responsive">
+  <link rel="stylesheet" href="/src/styles/responsive.css?v=20261010-responsive">
 </head>
 <body>
 
@@ -365,7 +365,7 @@
     import { sound } from '/src/js/audio.js';
     import { initMotionFlow } from '/src/js/motionflow-setup.js';
 
-    document.addEventListener('DOMContentLoaded', () => {
+    const initSkillsPage = () => {
       initNav();
       initCustomCursor();
       setupInteractiveSounds();
@@ -422,23 +422,31 @@
         }
       }
 
-      termInput.addEventListener('keydown', (e) => {
-        if (e.key === 'Enter') {
-          const val = termInput.value;
-          termInput.value = '';
-          executeCommand(val);
-        }
-      });
+      if (termInput) {
+        termInput.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter') {
+            const val = termInput.value;
+            termInput.value = '';
+            executeCommand(val);
+          }
+        });
+      }
 
       // Quick tap command chips handler
       quickChips.forEach(btn => {
         btn.addEventListener('click', () => {
           const cmd = btn.getAttribute('data-cmd');
           executeCommand(cmd);
-          termInput.focus();
+          if (termInput) termInput.focus();
         });
       });
-    });
+    };
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initSkillsPage);
+    } else {
+      initSkillsPage();
+    }
   </script>
 </body>
 </html>

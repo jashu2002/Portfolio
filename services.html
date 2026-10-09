@@ -34,10 +34,10 @@
   <meta name="twitter:image" content="https://jashwanthraj.dev/assets/jashwanth-logo.jpg">
 
   <!-- Core & Cinematic Styles -->
-  <link rel="stylesheet" href="/src/styles/main.css">
-  <link rel="stylesheet" href="/src/styles/cinematic.css">
-  <link rel="stylesheet" href="/src/styles/components.css">
-  <link rel="stylesheet" href="/src/styles/responsive.css">
+  <link rel="stylesheet" href="/src/styles/main.css?v=20261010-responsive">
+  <link rel="stylesheet" href="/src/styles/cinematic.css?v=20261010-responsive">
+  <link rel="stylesheet" href="/src/styles/components.css?v=20261010-responsive">
+  <link rel="stylesheet" href="/src/styles/responsive.css?v=20261010-responsive">
 </head>
 <body>
 
@@ -453,7 +453,7 @@
     import { initMotionFlow } from '/src/js/motionflow-setup.js';
     import { initParallaxEngine } from '/src/js/parallax-engine.js';
 
-    document.addEventListener('DOMContentLoaded', () => {
+    const initServicesPage = () => {
       initNav();
       initCustomCursor();
       setupInteractiveSounds();
@@ -562,7 +562,13 @@
           setFilter(filter, label);
         });
       });
-    });
+    };
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initServicesPage);
+    } else {
+      initServicesPage();
+    }
   </script>
 </body>
 </html>

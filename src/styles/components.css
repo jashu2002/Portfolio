@@ -232,6 +232,31 @@
   color: var(--text-secondary);
 }
 
+/* Header Resume Quick Action Button */
+.btn-resume-nav {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 13px;
+  font-family: var(--font-mono);
+  font-size: 0.775rem;
+  font-weight: 600;
+  color: var(--cyan-primary);
+  background: rgba(0, 240, 255, 0.08);
+  border: 1px solid rgba(0, 240, 255, 0.35);
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  transition: all var(--transition-fast);
+}
+
+.btn-resume-nav:hover {
+  background: rgba(0, 240, 255, 0.18);
+  border-color: var(--cyan-primary);
+  box-shadow: 0 0 16px rgba(0, 240, 255, 0.35);
+  transform: translateY(-1px);
+  color: #fff;
+}
+
 /* 2. Custom Magnetic Cursor */
 .custom-cursor-dot {
   position: fixed;
@@ -1569,4 +1594,224 @@ body.cursor-hover .custom-cursor-ring {
 .filter-dropdown-item.active .check-icon {
   opacity: 1;
 }
+
+/* ==========================================================================
+   13. High-Converting Freelance Client Components
+   ========================================================================== */
+
+/* Header Primary CTA Button */
+.btn-header-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 18px;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: #050507 !important;
+  background: var(--cyan-primary);
+  border: 1px solid var(--cyan-primary);
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  box-shadow: 0 0 20px rgba(0, 240, 255, 0.4);
+  transition: all var(--transition-fast);
+}
+
+.btn-header-cta:hover {
+  background: #fff;
+  border-color: #fff;
+  box-shadow: 0 0 28px rgba(0, 240, 255, 0.65);
+  transform: translateY(-1px);
+}
+
+/* Client Service Offering Cards */
+.service-client-card {
+  padding: clamp(20px, 3vw, 28px);
+  background: rgba(10, 10, 16, 0.85);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+  transition: transform var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.service-client-card:hover {
+  border-color: var(--border-cyan);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.6), 0 0 24px rgba(0, 240, 255, 0.12);
+  transform: translateY(-2px);
+}
+
+.service-icon-glyph {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-md);
+  background: rgba(0, 240, 255, 0.08);
+  border: 1px solid var(--border-cyan);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--cyan-primary);
+  flex-shrink: 0;
+}
+
+.service-deliverables-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.service-deliverables-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  line-height: 1.45;
+}
+
+.service-deliverables-list li::before {
+  content: "✓";
+  color: var(--cyan-primary);
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+/* 7-Stage Client Process Timeline */
+.process-stepper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+  position: relative;
+}
+
+.process-step-card {
+  padding: 22px;
+  background: rgba(12, 12, 20, 0.7);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+  transition: border-color var(--transition-fast), transform var(--transition-fast);
+}
+
+.process-step-card:hover {
+  border-color: var(--border-medium);
+  transform: translateY(-2px);
+}
+
+.step-num-badge {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--cyan-primary);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Client FAQ Accordion */
+.faq-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 840px;
+  margin-inline: auto;
+}
+
+.faq-item {
+  background: rgba(12, 12, 18, 0.85);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  transition: border-color var(--transition-fast);
+}
+
+.faq-item:hover,
+.faq-item.open {
+  border-color: var(--border-cyan);
+}
+
+.faq-question {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 22px;
+  background: transparent;
+  border: none;
+  color: var(--text-primary);
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+  gap: 16px;
+  font-family: inherit;
+  transition: color var(--transition-fast);
+}
+
+.faq-question:hover {
+  color: var(--cyan-primary);
+}
+
+.faq-chevron {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  color: var(--cyan-primary);
+  transition: transform var(--transition-normal);
+}
+
+.faq-item.open .faq-chevron {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 22px;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.65;
+  transition: max-height 0.3s cubic-bezier(0.16, 1, 0.3, 1), padding 0.3s ease;
+}
+
+.faq-item.open .faq-answer {
+  max-height: 400px;
+  padding-bottom: 20px;
+}
+
+/* Strategic Inline Conversion Banner */
+.inline-conversion-banner {
+  padding: clamp(24px, 3.5vw, 36px);
+  background: linear-gradient(135deg, rgba(0, 240, 255, 0.05), rgba(168, 85, 247, 0.05));
+  border: 1px solid var(--border-cyan);
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-block: var(--space-12);
+  box-shadow: 0 0 30px rgba(0, 240, 255, 0.08);
+}
+
+.process-stage-card {
+  transition: transform var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.process-stage-card:hover {
+  border-color: var(--cyan-primary);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4), 0 0 20px rgba(0, 240, 255, 0.08);
+}
+
 

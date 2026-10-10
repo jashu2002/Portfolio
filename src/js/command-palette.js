@@ -19,40 +19,48 @@ export function initCommandPalette() {
       </div>
       <ul class="cmd-list" role="listbox">
         <li class="cmd-item" data-action="goto" data-url="index.html">
-          <span><strong>Overview:</strong> Full-Stack Portfolio & Highlights</span>
-          <span class="badge">Page</span>
-        </li>
-        <li class="cmd-item" data-action="goto" data-url="services.html">
-          <span><strong>Services:</strong> Web Apps, AI Workflows & CRMs</span>
+          <span><strong>Home:</strong> Freelance Software Developer & Solutions</span>
           <span class="badge">Page</span>
         </li>
         <li class="cmd-item" data-action="goto" data-url="projects.html">
-          <span><strong>Projects:</strong> Production Case Studies & Demos</span>
+          <span><strong>Work:</strong> Selected Projects & Case Studies</span>
           <span class="badge">Page</span>
         </li>
+        <li class="cmd-item" data-action="goto" data-url="services.html">
+          <span><strong>Services:</strong> Web, E-Commerce, Python & AI Solutions</span>
+          <span class="badge badge-cyan">Services</span>
+        </li>
         <li class="cmd-item" data-action="goto" data-url="workflow.html">
-          <span><strong>Workflow:</strong> Development Lifecycle & QA</span>
+          <span><strong>Process:</strong> 7-Stage Client Development Lifecycle</span>
           <span class="badge">Page</span>
         </li>
         <li class="cmd-item" data-action="goto" data-url="skills.html">
-          <span><strong>Skills:</strong> Full-Stack Technical Competencies</span>
+          <span><strong>About:</strong> Background & Technical Stack</span>
           <span class="badge">Page</span>
         </li>
         <li class="cmd-item" data-action="goto" data-url="contact.html">
-          <span><strong>Contact:</strong> Get in Touch & Inquiries</span>
-          <span class="badge">Page</span>
+          <span><strong>Start a Project:</strong> Request a Quote & Consultation</span>
+          <span class="badge badge-emerald">Action</span>
         </li>
-        <li class="cmd-item" data-action="toggle-audio">
-          <span><strong>Toggle Sound:</strong> Audio Synthesizer</span>
-          <span class="badge badge-cyan">Audio</span>
+        <li class="cmd-item" data-action="goto-external" data-url="/assets/Jashwanth_Raj_Resume.pdf">
+          <span><strong>Resume:</strong> View Jashwanth Raj Resume (PDF)</span>
+          <span class="badge badge-emerald">Resume</span>
+        </li>
+        <li class="cmd-item" data-action="goto-external" data-url="https://github.com/jashu2002">
+          <span><strong>GitHub:</strong> github.com/jashu2002</span>
+          <span class="badge">Code</span>
+        </li>
+        <li class="cmd-item" data-action="goto-external" data-url="https://www.linkedin.com/in/jashwanthraj/">
+          <span><strong>LinkedIn:</strong> linkedin.com/in/jashwanthraj</span>
+          <span class="badge badge-cyan">Connect</span>
         </li>
         <li class="cmd-item" data-action="copy-email">
           <span><strong>Copy Email:</strong> jashwanthraj0310@gmail.com</span>
           <span class="badge badge-violet">Action</span>
         </li>
-        <li class="cmd-item" data-action="goto-external" data-url="https://www.linkedin.com/in/jashwanthraj/">
-          <span><strong>LinkedIn:</strong> Jashwanth Raj Profile</span>
-          <span class="badge badge-cyan">Connect</span>
+        <li class="cmd-item" data-action="toggle-audio">
+          <span><strong>Toggle Sound:</strong> Audio Synthesizer</span>
+          <span class="badge">Audio</span>
         </li>
       </ul>
     </div>

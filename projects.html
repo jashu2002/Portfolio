@@ -144,7 +144,7 @@
             <div class="filter-dropdown-selected">
               <span class="filter-dropdown-dot"></span>
               <span class="filter-dropdown-label">Domain:</span>
-              <span class="filter-dropdown-current">All Projects (7)</span>
+              <span class="filter-dropdown-current">All Projects (9)</span>
             </div>
             <svg class="filter-dropdown-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <polyline points="6 9 12 15 18 9"></polyline>
@@ -153,7 +153,7 @@
 
           <ul class="filter-dropdown-menu" id="filter-dropdown-menu" role="listbox" aria-labelledby="filter-dropdown-btn">
             <li class="filter-dropdown-item interactive active" role="option" aria-selected="true" data-filter="all">
-              <span>All Projects (7)</span>
+              <span>All Projects (9)</span>
               <svg class="check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#00F0FF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
             </li>
             <li class="filter-dropdown-item interactive" role="option" aria-selected="false" data-filter="backend">
@@ -172,7 +172,7 @@
         </div>
       </div>
 
-      <!-- Projects Grid (Structured 3-column / 2-row Responsive Layout) -->
+      <!-- Projects Grid (Structured 3-column / 3-row Responsive Layout) -->
       <div class="cards-grid-4col" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 18px;" data-mf-stagger-animation="fade" data-mf-stagger-delay="100" data-mf-stagger-once="true">
 
         <!-- Project 1: Dhansiri Chakki Fresh Atta Platform -->
@@ -183,7 +183,7 @@
 
           <div class="card-header-meta">
             <span class="badge badge-cyan" style="font-size: 0.625rem; padding: 2px 6px;">COMMERCIAL · E-COMMERCE</span>
-            <span style="font-family: var(--font-mono); font-size: 0.65rem; color: var(--emerald-status);">Live Deployed ↗</span>
+            <span class="status-badge status-live"><span class="status-badge-dot"></span>LIVE STOREFRONT</span>
           </div>
 
           <h2 class="card-title" style="font-size: 1.15rem;">Dhansiri Chakki Fresh Atta</h2>
@@ -228,7 +228,7 @@
 
           <div class="card-header-meta">
             <span class="badge badge-cyan" style="font-size: 0.625rem; padding: 2px 6px;">NEXT.JS · E-COMMERCE</span>
-            <span style="font-family: var(--font-mono); font-size: 0.65rem; color: var(--emerald-status);">Live Deployed ↗</span>
+            <span class="status-badge status-live"><span class="status-badge-dot"></span>LIVE SHOWCASE</span>
           </div>
 
           <h2 class="card-title" style="font-size: 1.15rem;">WOofe Luxury Pet Furniture</h2>
@@ -266,7 +266,47 @@
           </div>
         </article>
 
-        <!-- Project 3: 369 Herbal's E-Commerce -->
+        <!-- Project 3: Mood & Musk Luxury Perfumery -->
+        <article class="card-3d spotlight-card project-item card-compact" data-category="backend" id="mood">
+          <div class="holo-frame" style="height: 180px !important;">
+            <img src="/assets/project_mood_musk.jpg" alt="Mood & Musk Luxury Artisanal Fragrance Storefront Screenshot" loading="lazy">
+          </div>
+
+          <div class="card-header-meta">
+            <span class="badge badge-cyan" style="font-size: 0.625rem; padding: 2px 6px;">E-COMMERCE · LUXURY BRAND</span>
+            <span class="status-badge status-live"><span class="status-badge-dot"></span>LIVE SHOWCASE</span>
+          </div>
+
+          <h2 class="card-title" style="font-size: 1.15rem;">Mood & Musk Luxury Perfumery</h2>
+          <p class="card-desc">
+            Direct-to-consumer artisanal fragrance storefront featuring olfactive accord breakdowns (Oud, Santal Noir, Bergamot), discovery sets, and frictionless cart ordering.
+          </p>
+
+          <div class="card-tags">
+            <span class="badge">Vanilla JS</span>
+            <span class="badge">CSS3 Tokens</span>
+            <span class="badge">Responsive Design</span>
+            <span class="badge">Vercel Edge</span>
+          </div>
+
+          <div class="card-specs" style="font-size: 0.775rem; line-height: 1.5; color: var(--text-secondary); background: rgba(0,0,0,0.25); padding: 8px 10px; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
+            <div><strong style="color: var(--text-primary);">Architecture:</strong> Semantic HTML5 + Custom Properties + Client Cart State</div>
+            <div><strong style="color: var(--text-primary);">Decision:</strong> Visual accord breakdown cards with notes pyramid conveying fragrance notes online</div>
+          </div>
+
+          <div class="card-footer" style="margin-top: auto; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border-subtle); padding-top: 10px; gap: 8px; flex-wrap: wrap;">
+            <div style="display: flex; gap: 10px; align-items: center;">
+              <span style="color: var(--emerald-status); font-size: 0.8rem; font-family: var(--font-mono);">
+                Live Showcase
+              </span>
+            </div>
+            <button type="button" class="btn btn-secondary btn-open-case-study" data-project="mood" style="font-size: 0.775rem; padding: 5px 12px;">
+              Case Study →
+            </button>
+          </div>
+        </article>
+
+        <!-- Project 4: 369 Herbal's E-Commerce -->
         <article class="card-3d spotlight-card project-item card-compact" data-category="backend" id="ecommerce">
           <div class="holo-frame" style="height: 180px !important;">
             <img src="/assets/project_ecommerce_369.jpg" alt="369 Herbal's E-Commerce Web Application Interface" loading="lazy">
@@ -274,7 +314,7 @@
 
           <div class="card-header-meta">
             <span class="badge badge-cyan" style="font-size: 0.625rem; padding: 2px 6px;">DJANGO · E-COMMERCE</span>
-            <span style="font-family: var(--font-mono); font-size: 0.65rem; color: var(--emerald-status);">Verified Repo</span>
+            <span class="status-badge status-opensource"><span class="status-badge-dot"></span>OPEN SOURCE STORE</span>
           </div>
 
           <h2 class="card-title" style="font-size: 1.15rem;">369 Herbal's E-Commerce Platform</h2>
@@ -305,7 +345,46 @@
           </div>
         </article>
 
-        <!-- Project 2: Dynamic Image Caption Generator -->
+        <!-- Project 5: AI Automated Video Pipeline -->
+        <article class="card-3d spotlight-card project-item card-compact" data-category="ml" id="video">
+          <div class="holo-frame" style="height: 180px !important;">
+            <img src="/assets/project_video_creator.jpg" alt="AI Automated Video Pipeline Terminal and Output Screenshot" loading="lazy">
+          </div>
+
+          <div class="card-header-meta">
+            <span class="badge badge-violet" style="font-size: 0.625rem; padding: 2px 6px;">AI AUTOMATION · PIPELINE</span>
+            <span class="status-badge status-experiment"><span class="status-badge-dot"></span>MVP / EXPERIMENTAL</span>
+          </div>
+
+          <h2 class="card-title" style="font-size: 1.15rem;">AI Automated Video Pipeline</h2>
+          <p class="card-desc">
+            Automated script-to-video production tool chaining LLM scene scripting, text-to-speech audio synthesis, subtitle generation, and video composition.
+          </p>
+
+          <div class="card-tags">
+            <span class="badge">Python</span>
+            <span class="badge">MoviePy</span>
+            <span class="badge">FFmpeg</span>
+            <span class="badge">TTS Engine</span>
+            <span class="badge">LLM APIs</span>
+          </div>
+
+          <div class="card-specs" style="font-size: 0.775rem; line-height: 1.5; color: var(--text-secondary); background: rgba(0,0,0,0.25); padding: 8px 10px; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
+            <div><strong style="color: var(--text-primary);">Architecture:</strong> Python Pipeline + TTS Audio Synthesis + MoviePy/FFmpeg Composition</div>
+            <div><strong style="color: var(--text-primary);">Decision:</strong> Audio duration boundary checks to automatically adjust slide duration and prevent speech truncation</div>
+          </div>
+
+          <div class="card-footer" style="margin-top: auto; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border-subtle); padding-top: 10px;">
+            <a href="https://github.com/jashu2002/video_creator" target="_blank" rel="noopener noreferrer" style="color: var(--cyan-primary); font-size: 0.8rem; font-family: var(--font-mono); display: inline-flex; align-items: center; gap: 4px;">
+              GitHub ↗
+            </a>
+            <button type="button" class="btn btn-secondary btn-open-case-study" data-project="video" style="font-size: 0.775rem; padding: 5px 12px;">
+              Case Study →
+            </button>
+          </div>
+        </article>
+
+        <!-- Project 6: Dynamic Image Caption Generator -->
         <article class="card-3d spotlight-card project-item card-compact" data-category="ml" id="caption">
           <div class="holo-frame" style="height: 180px !important;">
             <img src="/assets/project_image_caption.jpg" alt="Dynamic Image Caption Generator Deep Learning Architecture" loading="lazy">
@@ -313,7 +392,7 @@
 
           <div class="card-header-meta">
             <span class="badge badge-violet" style="font-size: 0.625rem; padding: 2px 6px;">DEEP LEARNING · NLP</span>
-            <span style="font-family: var(--font-mono); font-size: 0.65rem; color: var(--emerald-status);">Verified Repo</span>
+            <span class="status-badge status-opensource"><span class="status-badge-dot"></span>DEEP LEARNING MODEL</span>
           </div>
 
           <h2 class="card-title" style="font-size: 1.15rem;">Dynamic Image Caption Generator</h2>
@@ -344,7 +423,7 @@
           </div>
         </article>
 
-        <!-- Project 3: Breast Cancer Prediction System -->
+        <!-- Project 7: Breast Cancer Prediction System -->
         <article class="card-3d spotlight-card project-item card-compact" data-category="ml" id="cancer">
           <div class="holo-frame" style="height: 180px !important;">
             <img src="/assets/project_breast_cancer.jpg" alt="Clinical Breast Cancer Diagnostic Machine Learning System" loading="lazy">
@@ -352,7 +431,7 @@
 
           <div class="card-header-meta">
             <span class="badge badge-emerald" style="font-size: 0.625rem; padding: 2px 6px;">MACHINE LEARNING</span>
-            <span style="font-family: var(--font-mono); font-size: 0.65rem; color: var(--emerald-status);">Verified Repo</span>
+            <span class="status-badge status-opensource"><span class="status-badge-dot"></span>CLINICAL ML CLASSIFIER</span>
           </div>
 
           <h2 class="card-title" style="font-size: 1.15rem;">Clinical Breast Cancer Prediction</h2>
@@ -383,7 +462,7 @@
           </div>
         </article>
 
-        <!-- Project 4: YOLO Real-Time Object Detection -->
+        <!-- Project 8: YOLO Real-Time Object Detection -->
         <article class="card-3d spotlight-card project-item card-compact" data-category="vision" id="yolo">
           <div class="holo-frame" style="height: 180px !important;">
             <img src="/assets/project_yolo_vision.jpg" alt="Real-Time YOLO Object Detection Computer Vision Pipeline" loading="lazy">
@@ -391,7 +470,7 @@
 
           <div class="card-header-meta">
             <span class="badge badge-cyan" style="font-size: 0.625rem; padding: 2px 6px;">COMPUTER VISION</span>
-            <span style="font-family: var(--font-mono); font-size: 0.65rem; color: var(--emerald-status);">Verified Repo</span>
+            <span class="status-badge status-opensource"><span class="status-badge-dot"></span>COMPUTER VISION PIPELINE</span>
           </div>
 
           <h2 class="card-title" style="font-size: 1.15rem;">Real-Time YOLO Object Detection</h2>
@@ -422,7 +501,7 @@
           </div>
         </article>
 
-        <!-- Project 5: FastAPI Modular Backend Service -->
+        <!-- Project 9: FastAPI Modular Backend Service -->
         <article class="card-3d spotlight-card project-item card-compact" data-category="backend" id="fastapi">
           <div class="holo-frame" style="height: 180px !important;">
             <img src="/assets/project_fastapi_backend.jpg" alt="FastAPI Modular Backend Service Swagger UI" loading="lazy">
@@ -430,7 +509,7 @@
 
           <div class="card-header-meta">
             <span class="badge badge-emerald" style="font-size: 0.625rem; padding: 2px 6px;">BACKEND · REST API</span>
-            <span style="font-family: var(--font-mono); font-size: 0.65rem; color: var(--emerald-status);">Verified Repo</span>
+            <span class="status-badge status-opensource"><span class="status-badge-dot"></span>MODULAR REST API</span>
           </div>
 
           <h2 class="card-title" style="font-size: 1.15rem;">FastAPI Modular Backend Service</h2>
@@ -669,12 +748,45 @@
           <div>
             <h3 style="color: #fff; font-size: 1.05rem; margin-bottom: 6px;">3. Key Engineering Challenge & Solution</h3>
             <p><strong>Challenge:</strong> Orchestrating complex multi-layered scroll timelines and material hotspot inspection dialogs without causing jank or layout recalculations on mobile devices.<br>
-            <strong>Solution:</strong> Leveraged GPU-accelerated CSS transforms paired with GSAP timeline batching, offloading spring physics to Framer Motion components with strict <code>will-change: transform</code> hints for seamless 60fps scrolling.</p>
+            <strong>Solution:</strong> Leveraged GPU-accelerated CSS transforms paired with GSAP timeline batching, offloading spring physics to Framer Motion components with strict <code>will-change: transform</code> hints for smooth, hardware-accelerated scrolling.</p>
           </div>
           <div>
             <h3 style="color: #fff; font-size: 1.05rem; margin-bottom: 6px;">4. Production & Craftsmanship</h3>
             <p style="font-style: italic; color: var(--text-primary); border-left: 2px solid var(--cyan-primary); padding-left: 12px;">
               "Live at woozy-xi.vercel.app with flawless type hierarchy, warm organic color palettes (terracotta, ivory, sand, espresso), and editorial craftsmanship tailored for luxury commerce."
+            </p>
+          </div>
+        `
+      },
+      mood: {
+        badge: '<span class="badge badge-cyan">E-COMMERCE · LUXURY BRAND</span>',
+        title: "Mood & Musk Luxury Perfumery",
+        purpose: "Artisanal Fragrance Showcase, Accord Visualizer & Discovery Sets",
+        github: "https://github.com/jashu2002",
+        live: "#",
+        tech: ["HTML5", "CSS3 Custom Properties", "Vanilla JavaScript (ES6+)", "Responsive Grid", "Vercel Edge"],
+        body: `
+          <div>
+            <h3 style="color: #fff; font-size: 1.05rem; margin-bottom: 6px;">1. The Problem & Brand Vision</h3>
+            <p>Selling high-end artisanal perfumery online is notoriously challenging because buyers cannot physically smell fragrance formulations. The requirement was to build an immersive digital storefront for Mood & Musk that visually communicates olfactory scent pyramids (Top, Heart, Base notes) and evokes mood associations (Smoky Oud, Santal Noir, Bergamot Glow).</p>
+          </div>
+          <div>
+            <h3 style="color: #fff; font-size: 1.05rem; margin-bottom: 6px;">2. What I Built & Architecture</h3>
+            <p>Designed and built a tactile direct-to-consumer storefront with bespoke olfactive accord breakdown cards, interactive notes pyramids, discovery set selectors, and a persistent client shopping cart. Emphasized rich typography, warm obsidian surfaces, and zero-jank micro-interactions on mobile devices.</p>
+            <div style="background: rgba(0,0,0,0.4); padding: 10px 14px; border-radius: 6px; border: 1px solid var(--border-subtle); font-family: var(--font-mono); font-size: 0.8rem; color: var(--cyan-primary); margin-top: 8px;">
+              [Browser Client] ──> [Fragrance Note Accord Visualizer] ──> [Concentration Selector (50ml / 100ml)]<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└──> [Cart State Manager] ──> [Direct Checkout Flow]
+            </div>
+          </div>
+          <div>
+            <h3 style="color: #fff; font-size: 1.05rem; margin-bottom: 6px;">3. Key Engineering Decision</h3>
+            <p><strong>Decision:</strong> Used lightweight CSS custom property palettes for instant theme switches between scent profiles without downloading heavy image assets or 3D runtimes, preserving sub-second mobile page loads.</p>
+          </div>
+          <div>
+            <h3 style="color: #fff; font-size: 1.05rem; margin-bottom: 6px;">4. Status & Availability</h3>
+            <p style="font-style: italic; color: var(--text-primary); border-left: 2px solid var(--cyan-primary); padding-left: 12px;">
+              "Live showcase demonstrating luxury aesthetic sensibility, conversion copywriting, and friction-free shopping experience."
             </p>
           </div>
         `
@@ -708,6 +820,39 @@
             <h3 style="color: #fff; font-size: 1.05rem; margin-bottom: 6px;">4. What I Learned</h3>
             <p style="font-style: italic; color: var(--text-primary); border-left: 2px solid var(--cyan-primary); padding-left: 12px;">
               "Managing stateful transactions taught me never to trust client-side values. Re-calculating prices and validating quantities strictly on the server is fundamental to reliable e-commerce systems."
+            </p>
+          </div>
+        `
+      },
+      video: {
+        badge: '<span class="badge badge-violet">AI AUTOMATION · PIPELINE</span>',
+        title: "AI Automated Video Pipeline",
+        purpose: "Python Script-to-Video Engine with LLM Scripting, TTS & Video Composition",
+        github: "https://github.com/jashu2002/video_creator",
+        tech: ["Python", "MoviePy", "FFmpeg", "TTS Engine", "LLM APIs", "Pillow"],
+        body: `
+          <div>
+            <h3 style="color: #fff; font-size: 1.05rem; margin-bottom: 6px;">1. The Problem</h3>
+            <p>Creating short-form informational or marketing videos manually is labor-intensive: drafting scripts, generating audio voiceovers, finding matching visual assets, aligning subtitles, and exporting MP4 compositions takes hours of tedious editing per video.</p>
+          </div>
+          <div>
+            <h3 style="color: #fff; font-size: 1.05rem; margin-bottom: 6px;">2. What I Built & Architecture</h3>
+            <p>Engineered an end-to-end automated Python pipeline that takes a single text prompt, generates a scene-by-scene script with visual cues via LLM API, synthesizes voiceover audio, generates synchronized subtitles, and stitches together images and animations into a finalized 1080p MP4 file via MoviePy and FFmpeg.</p>
+            <div style="background: rgba(0,0,0,0.4); padding: 10px 14px; border-radius: 6px; border: 1px solid var(--border-subtle); font-family: var(--font-mono); font-size: 0.8rem; color: var(--violet-primary); margin-top: 8px;">
+              [Text Topic Prompt] ──> [LLM Structured Script JSON] ──> [TTS Audio Generation Engine]<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└──> [MoviePy + FFmpeg Audio/Visual Sync] ──> [1080p MP4 Render]
+            </div>
+          </div>
+          <div>
+            <h3 style="color: #fff; font-size: 1.05rem; margin-bottom: 6px;">3. Key Engineering Challenge & Solution</h3>
+            <p><strong>Challenge:</strong> Discrepancies between voiceover durations and visual slide lengths causing audio to be cut off or awkward pauses at slide transitions.<br>
+            <strong>Solution:</strong> Programmatically inspected generated audio file durations in milliseconds prior to video composition, dynamically calculating each scene's frame hold duration to guarantee 100% synchronization.</p>
+          </div>
+          <div>
+            <h3 style="color: #fff; font-size: 1.05rem; margin-bottom: 6px;">4. Status & Limitations</h3>
+            <p style="font-style: italic; color: var(--text-primary); border-left: 2px solid var(--violet-primary); padding-left: 12px;">
+              "MVP / Experimental tool built for batch production experiments. Transparently documented on GitHub with clear local installation instructions."
             </p>
           </div>
         `

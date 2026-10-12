@@ -3,54 +3,54 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <!-- Homepage / Developer Profile -->
   <url>
-    <loc>https://jashwanthraj.dev/</loc>
-    <lastmod>2026-10-01</lastmod>
+    <loc>https://jashwanth-raj.vercel.app/</loc>
+    <lastmod>2026-10-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://jashwanthraj.dev/assets/jashwanth-logo.jpg</image:loc>
-      <image:title>Jashwanth Raj - Brand Emblem</image:title>
-      <image:caption>SDE-1 Full-Stack Developer and Autonomous AI Systems Engineer</image:caption>
+      <image:loc>https://jashwanth-raj.vercel.app/assets/jashwanth-logo.jpg</image:loc>
+      <image:title>Jashwanth Raj - Developer Portfolio</image:title>
+      <image:caption>Python and Full-Stack Developer</image:caption>
     </image:image>
-  </url>
-
-  <!-- Services & Solutions -->
-  <url>
-    <loc>https://jashwanthraj.dev/services.html</loc>
-    <lastmod>2026-10-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
   </url>
 
   <!-- Projects & Case Studies -->
   <url>
-    <loc>https://jashwanthraj.dev/projects.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <loc>https://jashwanth-raj.vercel.app/projects.html</loc>
+    <lastmod>2026-10-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
-  <!-- Autonomous Workflow & Multi-Agent Architecture -->
+  <!-- Freelance Services & Client Solutions -->
   <url>
-    <loc>https://jashwanthraj.dev/workflow.html</loc>
-    <lastmod>2026-10-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Technical Arsenal & Skills Matrix -->
-  <url>
-    <loc>https://jashwanthraj.dev/skills.html</loc>
-    <lastmod>2026-10-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Direct Transmission & Contact Channels -->
-  <url>
-    <loc>https://jashwanthraj.dev/contact.html</loc>
-    <lastmod>2026-10-01</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://jashwanth-raj.vercel.app/services.html</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+  </url>
+
+  <!-- Engineering Workflow & Lifecycle -->
+  <url>
+    <loc>https://jashwanth-raj.vercel.app/workflow.html</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Technical Skills & Stack Matrix -->
+  <url>
+    <loc>https://jashwanth-raj.vercel.app/skills.html</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Contact & Direct Inquiries -->
+  <url>
+    <loc>https://jashwanth-raj.vercel.app/contact.html</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 </urlset>

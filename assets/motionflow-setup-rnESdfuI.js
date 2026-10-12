@@ -30,7 +30,7 @@
           <span class="badge badge-cyan">Services</span>
         </li>
         <li class="cmd-item" data-action="goto" data-url="workflow.html">
-          <span><strong>Process:</strong> 7-Stage Client Development Lifecycle</span>
+          <span><strong>Process:</strong> Practical 6-Step Development Process</span>
           <span class="badge">Page</span>
         </li>
         <li class="cmd-item" data-action="goto" data-url="skills.html">

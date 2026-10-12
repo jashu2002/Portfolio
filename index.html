@@ -112,11 +112,6 @@
       </nav>
 
       <div class="header-actions">
-        <!-- High-Converting Primary Header CTA -->
-        <a href="contact.html" class="btn-header-cta" id="btn-header-start-project">
-          Start a Project →
-        </a>
-
         <!-- Direct Resume Download Button -->
         <a href="/assets/Jashwanth_Raj_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn-resume-nav" id="btn-header-resume" aria-label="View Resume in PDF format">
           <span>Resume ↗</span>
@@ -182,14 +177,7 @@
 
           <h1 id="hero-heading" data-mf-animation="fade-up" data-mf-animation-duration="700" style="min-height: 0 !important; margin-bottom: 0 !important;">
             <span class="hero-line">I Build Digital Products That</span>
-            <span class="hero-line hero-typing-line text-shimmer" 
-                  data-mf-text-type="typing" 
-                  data-mf-text-typing-speed="55" 
-                  data-mf-text-typing-delete-speed="25" 
-                  data-mf-text-typing-interval="2600" 
-                  data-mf-text-typing-loop="true"
-                  data-mf-text-typing-cursor="true"
-                  data-mf-text-typing-cursor-char="▎">
+            <span class="hero-line hero-typing-line text-shimmer" id="hero-typing-target">
               <span class="typing-phrase">Solve Business Problems.</span>
               <span class="typing-phrase">Turn Ideas Into Reality.</span>
               <span class="typing-phrase">Automate Core Workflows.</span>
@@ -241,8 +229,8 @@
     </section>
 
     <!-- Capabilities Ticker -->
-    <section class="ticker-strip" aria-label="Core Freelance Capabilities" data-mf-animation="fade" data-mf-animation-duration="800">
-      <div data-mf-ticker="true" data-mf-ticker-speed="65" data-mf-ticker-direction="left" data-mf-ticker-pause-hover="true">
+    <section class="ticker-strip" aria-label="Core Freelance Capabilities">
+      <div class="ticker-track" data-mf-ticker="true" data-mf-ticker-speed="65" data-mf-ticker-direction="left" data-mf-ticker-pause-hover="true">
         <span class="ticker-item">🌐 BUSINESS WEBSITES</span>
         <span class="ticker-item">⚡ CUSTOM WEB APPLICATIONS</span>
         <span class="ticker-item">🐍 PYTHON & FASTAPI APIS</span>
@@ -251,6 +239,15 @@
         <span class="ticker-item">🗄️ RELATIONAL DATABASES & SQL</span>
         <span class="ticker-item">👁️ COMPUTER VISION & MACHINE LEARNING</span>
         <span class="ticker-item">🐳 DOCKER & CLOUD DEPLOYMENT</span>
+        <!-- Duplicated items for seamless infinite marquee loop -->
+        <span class="ticker-item" aria-hidden="true">🌐 BUSINESS WEBSITES</span>
+        <span class="ticker-item" aria-hidden="true">⚡ CUSTOM WEB APPLICATIONS</span>
+        <span class="ticker-item" aria-hidden="true">🐍 PYTHON & FASTAPI APIS</span>
+        <span class="ticker-item" aria-hidden="true">🛍️ CUSTOM E-COMMERCE</span>
+        <span class="ticker-item" aria-hidden="true">🧠 AI TOOLS & WORKFLOW AUTOMATION</span>
+        <span class="ticker-item" aria-hidden="true">🗄️ RELATIONAL DATABASES & SQL</span>
+        <span class="ticker-item" aria-hidden="true">👁️ COMPUTER VISION & MACHINE LEARNING</span>
+        <span class="ticker-item" aria-hidden="true">🐳 DOCKER & CLOUD DEPLOYMENT</span>
       </div>
     </section>
 
@@ -309,14 +306,7 @@
         
         <!-- Service 01: Website Development -->
         <article class="service-client-card card-3d spotlight-card">
-          <div style="display: flex; justify-content: space-between; align-items: center;">
-            <div class="service-icon-glyph">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <rect x="2" y="3" width="20" height="14" rx="2"></rect>
-                <line x1="8" y1="21" x2="16" y2="21"></line>
-                <line x1="12" y1="17" x2="12" y2="21"></line>
-              </svg>
-            </div>
+          <div style="display: flex; justify-content: flex-start; align-items: center; margin-bottom: 6px;">
             <span class="step-num-badge">SERVICE 01</span>
           </div>
 
@@ -342,50 +332,37 @@
           </div>
         </article>
 
-        <!-- Service 02: Web Application Development -->
+        <!-- Service 02: Mobile Application Development -->
         <article class="service-client-card card-3d spotlight-card">
-          <div style="display: flex; justify-content: space-between; align-items: center;">
-            <div class="service-icon-glyph" style="color: var(--violet-primary); background: rgba(168, 85, 247, 0.08); border-color: rgba(168, 85, 247, 0.3);">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
-                <line x1="3" y1="9" x2="21" y2="9"></line>
-                <line x1="9" y1="21" x2="9" y2="9"></line>
-              </svg>
-            </div>
+          <div style="display: flex; justify-content: flex-start; align-items: center; margin-bottom: 6px;">
             <span class="step-num-badge" style="color: var(--violet-primary);">SERVICE 02</span>
           </div>
 
           <div>
-            <h3 style="font-size: 1.25rem; color: #fff; margin-bottom: 6px;">Web Application Development</h3>
+            <h3 style="font-size: 1.25rem; color: #fff; margin-bottom: 6px;">Mobile Application Development</h3>
             <p style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.55;">
-              Custom web applications tailored around your business workflow: customer portals, management dashboards, internal business tools, and early-stage SaaS MVPs.
+              Custom mobile applications engineered for iOS and Android. Built for smooth touch performance, offline data caching, push notifications, and intuitive mobile workflows.
             </p>
           </div>
 
           <ul class="service-deliverables-list">
-            <li>Role-based user authentication & permissions</li>
-            <li>Relational database storage & structured reporting</li>
-            <li>Responsive dashboard interfaces with data filtering</li>
-            <li>Clean architecture designed to scale with your team</li>
+            <li>Cross-platform responsive layouts for iOS & Android</li>
+            <li>Offline-first local storage & background data synchronization</li>
+            <li>Push notifications, biometric login & device sensor hooks</li>
+            <li>REST API integration with real-time backend synchronization</li>
           </ul>
 
           <div style="margin-top: auto; padding-top: 14px; border-top: 1px solid var(--border-subtle); display: flex; justify-content: space-between; align-items: center;">
-            <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-tertiary);">Python · Django · FastAPI · SQL</span>
-            <a href="contact.html?service=webapp" class="btn btn-secondary" style="font-size: 0.8rem; padding: 6px 14px;">
-              Build a Web App →
+            <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-tertiary);">React Native · PWA · Python APIs · Flutter</span>
+            <a href="contact.html?service=mobile" class="btn btn-secondary" style="font-size: 0.8rem; padding: 6px 14px;">
+              Build a Mobile App →
             </a>
           </div>
         </article>
 
         <!-- Service 03: AI & Automation Systems -->
         <article class="service-client-card card-3d spotlight-card">
-          <div style="display: flex; justify-content: space-between; align-items: center;">
-            <div class="service-icon-glyph" style="color: var(--emerald-status); background: rgba(16, 185, 129, 0.08); border-color: rgba(16, 185, 129, 0.3);">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <circle cx="12" cy="12" r="3"></circle>
-                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
-              </svg>
-            </div>
+          <div style="display: flex; justify-content: flex-start; align-items: center; margin-bottom: 6px;">
             <span class="step-num-badge" style="color: var(--emerald-status);">SERVICE 03</span>
           </div>
 
@@ -413,14 +390,7 @@
 
         <!-- Service 04: Custom E-Commerce -->
         <article class="service-client-card card-3d spotlight-card">
-          <div style="display: flex; justify-content: space-between; align-items: center;">
-            <div class="service-icon-glyph">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <circle cx="9" cy="21" r="1"></circle>
-                <circle cx="20" cy="21" r="1"></circle>
-                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
-              </svg>
-            </div>
+          <div style="display: flex; justify-content: flex-start; align-items: center; margin-bottom: 6px;">
             <span class="step-num-badge">SERVICE 04</span>
           </div>
 
@@ -448,14 +418,7 @@
 
         <!-- Service 05: Backend & API Development -->
         <article class="service-client-card card-3d spotlight-card">
-          <div style="display: flex; justify-content: space-between; align-items: center;">
-            <div class="service-icon-glyph" style="color: var(--cyan-primary);">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M4 7V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v3"></path>
-                <rect x="2" y="7" width="20" height="14" rx="2"></rect>
-                <path d="M6 12h.01M10 12h.01"></path>
-              </svg>
-            </div>
+          <div style="display: flex; justify-content: flex-start; align-items: center; margin-bottom: 6px;">
             <span class="step-num-badge">SERVICE 05</span>
           </div>
 
@@ -483,13 +446,7 @@
 
         <!-- Service 06: Machine Learning & Vision -->
         <article class="service-client-card card-3d spotlight-card">
-          <div style="display: flex; justify-content: space-between; align-items: center;">
-            <div class="service-icon-glyph" style="color: var(--violet-primary); background: rgba(168, 85, 247, 0.08); border-color: rgba(168, 85, 247, 0.3);">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <circle cx="12" cy="12" r="10"></circle>
-                <circle cx="12" cy="12" r="3"></circle>
-              </svg>
-            </div>
+          <div style="display: flex; justify-content: flex-start; align-items: center; margin-bottom: 6px;">
             <span class="step-num-badge" style="color: var(--violet-primary);">SERVICE 06</span>
           </div>
 
@@ -552,7 +509,81 @@
       <!-- Projects Grid: Large Visual Cards -->
       <div class="cards-grid-4col" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 18px;" data-mf-stagger-animation="fade" data-mf-stagger-delay="100" data-mf-stagger-once="true">
         
-        <!-- Project 1: 369 Herbal's E-Commerce -->
+        <!-- Project 1: Dhansiri Chakki Fresh Atta Platform -->
+        <article class="card-3d spotlight-card card-compact" id="work-dhansiri">
+          <div class="holo-frame" style="height: 190px !important;">
+            <img src="/assets/project_dhansiri_atta.jpg" alt="Dhansiri Chakki Fresh Atta E-Commerce Storefront Interface" loading="lazy">
+          </div>
+          <div class="card-header-meta">
+            <span class="badge badge-cyan" style="font-size: 0.625rem; padding: 2px 6px;">COMMERCIAL · E-COMMERCE</span>
+            <span style="font-family: var(--font-mono); font-size: 0.65rem; color: var(--emerald-status);">Live Deployed ↗</span>
+          </div>
+          <h3 class="card-title" style="font-size: 1.15rem;">Dhansiri Chakki Fresh Atta</h3>
+          <p class="card-desc">
+            Production multi-page D2C e-commerce platform and wholesale portal for pure stone-ground chakki whole wheat flour with dynamic pack sizing, cart state, and instant WhatsApp ordering.
+          </p>
+          <div class="card-specs" style="font-size: 0.775rem; color: var(--text-secondary); background: rgba(0,0,0,0.25); padding: 8px 10px; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
+            <div><strong style="color: var(--text-primary);">What I Built:</strong> D2C multi-page storefront, 3D packaging parallax, WhatsApp checkout API, and edge CDN deployment.</div>
+          </div>
+          <div class="card-tags">
+            <span class="badge">Vanilla JS</span>
+            <span class="badge">CSS3 Tokens</span>
+            <span class="badge">E-Commerce</span>
+            <span class="badge">WhatsApp API</span>
+            <span class="badge">Vercel</span>
+          </div>
+          <div class="card-footer" style="margin-top: auto; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border-subtle); padding-top: 10px; gap: 8px; flex-wrap: wrap;">
+            <div style="display: flex; gap: 10px; align-items: center;">
+              <a href="https://dhansiri-ten.vercel.app/" target="_blank" rel="noopener noreferrer" style="color: var(--cyan-primary); font-size: 0.8rem; font-family: var(--font-mono); display: inline-flex; align-items: center; gap: 4px;">
+                Live Demo ↗
+              </a>
+              <span style="color: var(--text-tertiary); font-size: 0.75rem;">·</span>
+              <a href="https://github.com/jashu2002/dhansiri" target="_blank" rel="noopener noreferrer" style="color: var(--text-secondary); font-size: 0.8rem; font-family: var(--font-mono); display: inline-flex; align-items: center; gap: 4px;">
+                GitHub ↗
+              </a>
+            </div>
+            <a href="projects.html#dhansiri" style="color: #fff; font-size: 0.775rem;">View Case Study →</a>
+          </div>
+        </article>
+
+        <!-- Project 2: WOofe Luxury Dog Furniture Platform -->
+        <article class="card-3d spotlight-card card-compact" id="work-woofe">
+          <div class="holo-frame" style="height: 190px !important;">
+            <img src="/assets/project_woofe_luxury.jpg" alt="WOofe Luxury Dog Furniture Web Storefront Screenshot" loading="lazy">
+          </div>
+          <div class="card-header-meta">
+            <span class="badge badge-cyan" style="font-size: 0.625rem; padding: 2px 6px;">NEXT.JS · E-COMMERCE</span>
+            <span style="font-family: var(--font-mono); font-size: 0.65rem; color: var(--emerald-status);">Live Deployed ↗</span>
+          </div>
+          <h3 class="card-title" style="font-size: 1.15rem;">WOofe Luxury Pet Furniture</h3>
+          <p class="card-desc">
+            Scandinavian concept e-commerce platform for architectural dog furniture and orthopedic resting nests with interactive material timelines and slide-out cart.
+          </p>
+          <div class="card-specs" style="font-size: 0.775rem; color: var(--text-secondary); background: rgba(0,0,0,0.25); padding: 8px 10px; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
+            <div><strong style="color: var(--text-primary);">What I Built:</strong> Next.js 16 App Router, React 19, TypeScript, GSAP animations & slide-out cart drawer.</div>
+          </div>
+          <div class="card-tags">
+            <span class="badge">Next.js 16</span>
+            <span class="badge">React 19</span>
+            <span class="badge">TypeScript</span>
+            <span class="badge">GSAP</span>
+            <span class="badge">Vercel</span>
+          </div>
+          <div class="card-footer" style="margin-top: auto; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border-subtle); padding-top: 10px; gap: 8px; flex-wrap: wrap;">
+            <div style="display: flex; gap: 10px; align-items: center;">
+              <a href="https://woozy-xi.vercel.app/" target="_blank" rel="noopener noreferrer" style="color: var(--cyan-primary); font-size: 0.8rem; font-family: var(--font-mono); display: inline-flex; align-items: center; gap: 4px;">
+                Live Demo ↗
+              </a>
+              <span style="color: var(--text-tertiary); font-size: 0.75rem;">·</span>
+              <a href="https://github.com/jashu2002/woofz" target="_blank" rel="noopener noreferrer" style="color: var(--text-secondary); font-size: 0.8rem; font-family: var(--font-mono); display: inline-flex; align-items: center; gap: 4px;">
+                GitHub ↗
+              </a>
+            </div>
+            <a href="projects.html#woofe" style="color: #fff; font-size: 0.775rem;">View Case Study →</a>
+          </div>
+        </article>
+
+        <!-- Project 3: 369 Herbal's E-Commerce -->
         <article class="card-3d spotlight-card card-compact" id="work-ecommerce">
           <div class="holo-frame" style="height: 190px !important;">
             <img src="/assets/project_ecommerce_369.jpg" alt="369 Herbal's E-Commerce Web Storefront Screenshot" loading="lazy">
@@ -582,7 +613,7 @@
           </div>
         </article>
 
-        <!-- Project 2: Dynamic Image Caption Generator -->
+        <!-- Project 4: Dynamic Image Caption Generator -->
         <article class="card-3d spotlight-card card-compact" id="work-caption">
           <div class="holo-frame" style="height: 190px !important;">
             <img src="/assets/project_image_caption.jpg" alt="Dynamic Image Caption Generator Deep Learning Architecture" loading="lazy">
@@ -612,7 +643,7 @@
           </div>
         </article>
 
-        <!-- Project 3: Breast Cancer Prediction System -->
+        <!-- Project 5: Breast Cancer Prediction System -->
         <article class="card-3d spotlight-card card-compact" id="work-cancer">
           <div class="holo-frame" style="height: 190px !important;">
             <img src="/assets/project_breast_cancer.jpg" alt="Clinical Breast Cancer Diagnostic Machine Learning System" loading="lazy">
@@ -642,7 +673,7 @@
           </div>
         </article>
 
-        <!-- Project 4: YOLO Real-Time Object Detection -->
+        <!-- Project 6: YOLO Real-Time Object Detection -->
         <article class="card-3d spotlight-card card-compact" id="work-yolo">
           <div class="holo-frame" style="height: 190px !important;">
             <img src="/assets/project_yolo_vision.jpg" alt="Real-Time YOLO Object Detection Computer Vision Pipeline" loading="lazy">
@@ -675,8 +706,8 @@
       </div>
 
       <!-- Post-Work Conversion Trigger -->
-      <div style="text-align: center; margin-top: var(--space-12);" data-mf-animation="fade-up">
-        <p style="color: var(--text-secondary); font-size: 1rem; margin-bottom: 12px;">
+      <div style="text-align: center; margin-top: var(--space-12); margin-bottom: var(--space-16); padding-bottom: var(--space-8);" data-mf-animation="fade-up">
+        <p style="color: var(--text-secondary); font-size: 1rem; margin-bottom: 14px;">
           Have a web platform, e-commerce store, or custom application in mind?
         </p>
         <a href="contact.html" class="btn btn-primary" style="padding: 12px 28px; font-size: 0.95rem;">
@@ -686,7 +717,7 @@
     </section>
 
     <!-- Interactive Code Sandbox (Technical Craftsmanship Evidence) -->
-    <section class="container" id="live-sandbox-section" aria-label="Live Python & ML Code Sandbox" style="position: relative; z-index: 10; margin-top: var(--space-20);">
+    <section class="container" id="live-sandbox-section" aria-label="Live Python & ML Code Sandbox" style="position: relative; z-index: 10; margin-top: var(--space-24); padding-top: var(--space-12);">
       <div style="text-align: center; max-width: 760px; margin: 0 auto var(--space-8);" data-mf-animation="fade-up">
         <div style="display: inline-flex; align-items: center; gap: 8px; margin-bottom: 12px;">
           <span class="badge badge-cyan">TECHNICAL CRAFT</span>
@@ -983,109 +1014,42 @@
       </div>
     </section>
 
-    <!-- Comprehensive Client Project Inquiry Form (Primary Conversion Target) -->
+    <!-- Final Call to Action Banner (Directs to Dedicated Contact Page) -->
     <section id="inquiry" class="container" style="margin-top: var(--space-20); margin-bottom: var(--space-16); position: relative; z-index: 10;" aria-labelledby="inquiry-heading">
-      <div style="padding: clamp(28px, 4.5vw, 48px); background: linear-gradient(135deg, rgba(10, 10, 16, 0.98), rgba(16, 16, 26, 0.98)); border: 1px solid var(--border-cyan); border-radius: var(--radius-lg); box-shadow: 0 0 40px rgba(0, 240, 255, 0.12);" data-mf-animation="fade-up">
+      <div class="card-3d spotlight-card" style="padding: clamp(36px, 5vw, 56px); background: linear-gradient(135deg, rgba(10, 10, 16, 0.95), rgba(16, 16, 26, 0.95)); border: 1px solid var(--border-cyan); border-radius: var(--radius-lg); box-shadow: 0 0 45px rgba(0, 240, 255, 0.12); text-align: center;" data-mf-animation="fade-up">
         
-        <div style="text-align: center; max-width: 680px; margin-inline: auto; margin-bottom: var(--space-8);">
-          <span class="badge badge-cyan">START A PROJECT</span>
-          <h2 id="inquiry-heading" style="margin-top: 8px; font-size: clamp(1.6rem, 3vw, 2.3rem);">Tell Me What You Want to Build</h2>
-          <p style="margin-top: 6px; color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;">
-            Share your project idea, requirements, or business goals. I will review your inquiry and reply within 24 hours with practical recommendations.
-          </p>
-        </div>
-
-        <form id="project-inquiry-form" style="max-width: 760px; margin-inline: auto; display: flex; flex-direction: column; gap: 18px;">
+        <div style="max-width: 680px; margin-inline: auto;">
+          <div style="display: inline-flex; align-items: center; gap: 8px; margin-bottom: 14px;">
+            <span class="badge badge-cyan">
+              <span class="pulse-dot"></span>
+              START A PROJECT
+            </span>
+            <span class="badge badge-emerald">DIRECT CLIENT ACCESS</span>
+          </div>
           
-          <!-- Name & Email Dual Column -->
-          <div class="contact-input-grid">
-            <div>
-              <label for="client-name" style="display: block; font-family: var(--font-mono); font-size: 0.775rem; color: var(--text-secondary); margin-bottom: 6px;">
-                YOUR NAME <span style="color: var(--cyan-primary);">*</span>
-              </label>
-              <input type="text" id="client-name" required placeholder="e.g. Alex Rivera" style="width: 100%; padding: 12px 14px; background: rgba(0,0,0,0.4); border: 1px solid var(--border-medium); border-radius: var(--radius-md); color: #fff; font-family: inherit; font-size: 0.925rem;" />
-            </div>
-
-            <div>
-              <label for="client-email" style="display: block; font-family: var(--font-mono); font-size: 0.775rem; color: var(--text-secondary); margin-bottom: 6px;">
-                EMAIL ADDRESS <span style="color: var(--cyan-primary);">*</span>
-              </label>
-              <input type="email" id="client-email" required placeholder="alex@company.com" style="width: 100%; padding: 12px 14px; background: rgba(0,0,0,0.4); border: 1px solid var(--border-medium); border-radius: var(--radius-md); color: #fff; font-family: inherit; font-size: 0.925rem;" />
-            </div>
-          </div>
-
-          <!-- Company & Project Type Dual Column -->
-          <div class="contact-input-grid">
-            <div>
-              <label for="client-company" style="display: block; font-family: var(--font-mono); font-size: 0.775rem; color: var(--text-secondary); margin-bottom: 6px;">
-                BUSINESS / COMPANY NAME (OPTIONAL)
-              </label>
-              <input type="text" id="client-company" placeholder="e.g. Acme Studio / Startup" style="width: 100%; padding: 12px 14px; background: rgba(0,0,0,0.4); border: 1px solid var(--border-medium); border-radius: var(--radius-md); color: #fff; font-family: inherit; font-size: 0.925rem;" />
-            </div>
-
-            <div>
-              <label for="client-project-type" style="display: block; font-family: var(--font-mono); font-size: 0.775rem; color: var(--text-secondary); margin-bottom: 6px;">
-                PROJECT TYPE <span style="color: var(--cyan-primary);">*</span>
-              </label>
-              <select id="client-project-type" style="width: 100%; padding: 12px 14px; background: #07070B; border: 1px solid var(--border-medium); border-radius: var(--radius-md); color: #fff; font-family: inherit; font-size: 0.925rem;">
-                <option value="Custom Business Website">Custom Business Website</option>
-                <option value="Web Application / Dashboard">Web Application / Dashboard</option>
-                <option value="AI & Workflow Automation">AI & Workflow Automation</option>
-                <option value="Custom E-Commerce Store">Custom E-Commerce Store</option>
-                <option value="Backend Architecture / REST API">Backend Architecture / REST API</option>
-                <option value="Machine Learning / Vision Solution">Machine Learning / Vision Solution</option>
-                <option value="Other Software Development">Other Software Development</option>
-              </select>
-            </div>
-          </div>
-
-          <!-- Budget & Timeline Dual Column -->
-          <div class="contact-input-grid">
-            <div>
-              <label for="client-budget" style="display: block; font-family: var(--font-mono); font-size: 0.775rem; color: var(--text-secondary); margin-bottom: 6px;">
-                ESTIMATED BUDGET RANGE
-              </label>
-              <select id="client-budget" style="width: 100%; padding: 12px 14px; background: #07070B; border: 1px solid var(--border-medium); border-radius: var(--radius-md); color: #fff; font-family: inherit; font-size: 0.925rem;">
-                <option value="Under $1,000 (Starter Project)">Under $1,000 (Starter Project)</option>
-                <option value="$1,000 – $3,000 (Standard MVP / Site)">$1,000 – $3,000 (Standard MVP / Site)</option>
-                <option value="$3,000 – $5,000 (Comprehensive App)">$3,000 – $5,000 (Comprehensive App)</option>
-                <option value="$5,000+ (Custom Platform)">$5,000+ (Custom Platform)</option>
-                <option value="Flexible / Need Recommendation">Flexible / Need Recommendation</option>
-              </select>
-            </div>
-
-            <div>
-              <label for="client-timeline" style="display: block; font-family: var(--font-mono); font-size: 0.775rem; color: var(--text-secondary); margin-bottom: 6px;">
-                TARGET TIMELINE
-              </label>
-              <select id="client-timeline" style="width: 100%; padding: 12px 14px; background: #07070B; border: 1px solid var(--border-medium); border-radius: var(--radius-md); color: #fff; font-family: inherit; font-size: 0.925rem;">
-                <option value="Within 2-3 Weeks (Fast)">Within 2-3 Weeks (Fast)</option>
-                <option value="1 Month">1 Month</option>
-                <option value="2-3 Months">2-3 Months</option>
-                <option value="Flexible / Long-Term">Flexible / Long-Term</option>
-              </select>
-            </div>
-          </div>
-
-          <!-- Description -->
-          <div>
-            <label for="client-message" style="display: block; font-family: var(--font-mono); font-size: 0.775rem; color: var(--text-secondary); margin-bottom: 6px;">
-              PROJECT DESCRIPTION & GOALS <span style="color: var(--cyan-primary);">*</span>
-            </label>
-            <textarea id="client-message" required rows="4" placeholder="Describe what you want to build, the key features you need, and any reference websites or ideas..." style="width: 100%; padding: 12px 14px; background: rgba(0,0,0,0.4); border: 1px solid var(--border-medium); border-radius: var(--radius-md); color: #fff; font-family: inherit; font-size: 0.925rem; resize: vertical;"></textarea>
-          </div>
-
-          <!-- Submit Button -->
-          <button type="submit" class="btn btn-primary" id="btn-submit-inquiry" style="width: 100%; padding: 14px; justify-content: center; font-size: 1rem; margin-top: 6px;">
-            Send Project Inquiry →
-          </button>
-
-          <div id="inquiry-feedback" style="display: none; padding: 14px; border-radius: var(--radius-md); font-family: var(--font-mono); font-size: 0.85rem;" aria-live="polite"></div>
-
-          <p style="text-align: center; font-size: 0.775rem; color: var(--text-tertiary); margin: 0;">
-            Direct response guaranteed within 24 hours · Or email directly at <a href="mailto:jashwanthraj0310@gmail.com" style="color: var(--cyan-primary); text-decoration: underline;">jashwanthraj0310@gmail.com</a>
+          <h2 id="inquiry-heading" style="font-size: clamp(1.8rem, 3.5vw, 2.6rem); letter-spacing: -0.02em; margin-bottom: 12px;">
+            Let's Build Something <span class="text-shimmer">Valuable Together</span>.
+          </h2>
+          
+          <p style="color: var(--text-secondary); font-size: 1.05rem; line-height: 1.6; margin-bottom: 28px; max-width: 58ch; margin-inline: auto;">
+            Have a website, web app, Python backend API, or AI automation idea? Tell me about your requirements and I'll review your scope and reply with a practical recommendation, timeline, and estimate within 24 hours.
           </p>
-        </form>
+          
+          <div style="display: flex; gap: 16px; justify-content: center; align-items: center; flex-wrap: wrap; margin-bottom: 24px;">
+            <a href="contact.html" class="btn btn-primary" style="padding: 14px 32px; font-size: 1rem;">
+              Start a Project with Jashwanth →
+            </a>
+            <a href="mailto:jashwanthraj0310@gmail.com" class="btn btn-secondary" style="padding: 14px 24px; font-size: 1rem;">
+              Email Directly ↗
+            </a>
+          </div>
+
+          <div style="display: flex; justify-content: center; align-items: center; gap: 24px; flex-wrap: wrap; font-size: 0.825rem; color: var(--text-tertiary); font-family: var(--font-mono);">
+            <span>✓ 24-Hour Response Guaranteed</span>
+            <span>✓ Free Technical Scope & Advice</span>
+            <span>✓ 100% Full Source Code Ownership</span>
+          </div>
+        </div>
 
       </div>
     </section>
@@ -1185,47 +1149,6 @@
       initCodeSandbox();
       initFaq();
 
-      // Project Inquiry Form Submission Handling
-      const form = document.getElementById('project-inquiry-form');
-      const feedback = document.getElementById('inquiry-feedback');
-
-      if (form && feedback) {
-        form.addEventListener('submit', (e) => {
-          e.preventDefault();
-          sound.playSuccess();
-
-          const name = document.getElementById('client-name').value;
-          const email = document.getElementById('client-email').value;
-          const company = document.getElementById('client-company') ? document.getElementById('client-company').value : '';
-          const projectType = document.getElementById('client-project-type').value;
-          const budget = document.getElementById('client-budget').value;
-          const timeline = document.getElementById('client-timeline').value;
-          const message = document.getElementById('client-message').value;
-
-          feedback.style.display = 'block';
-          feedback.style.background = 'rgba(16, 185, 129, 0.1)';
-          feedback.style.border = '1px solid rgba(16, 185, 129, 0.35)';
-          feedback.style.color = '#10B981';
-          feedback.innerHTML = `✓ Thank you, ${name}! Your inquiry has been prepared for <strong>jashwanthraj0310@gmail.com</strong>. Opening your email client to dispatch...`;
-
-          const subject = encodeURIComponent(`[Project Inquiry] ${projectType} - ${name} (${company || 'Individual'})`);
-          const body = encodeURIComponent(
-            `Name: ${name}\n` +
-            `Email: ${email}\n` +
-            `Company: ${company || 'N/A'}\n` +
-            `Project Type: ${projectType}\n` +
-            `Estimated Budget: ${budget}\n` +
-            `Target Timeline: ${timeline}\n\n` +
-            `Project Description:\n${message}\n`
-          );
-
-          setTimeout(() => {
-            window.location.href = `mailto:jashwanthraj0310@gmail.com?subject=${subject}&body=${body}`;
-          }, 800);
-
-          form.reset();
-        });
-      }
     };
 
     if (document.readyState === 'loading') {

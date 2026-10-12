@@ -199,9 +199,9 @@
     padding-bottom: 0 !important;
   }
 
-  /* Subpages: container directly under main-content sits right under 64px navbar with clean 10px breathing room */
+  /* Subpages: container directly under main-content sits safely under 64px navbar with clean breathing room */
   #main-content > .container:first-child:not(.hero-section) {
-    padding-top: 74px !important;
+    padding-top: 86px !important;
   }
 
   /* Tighten subpage headers & remove huge empty void under navbar */

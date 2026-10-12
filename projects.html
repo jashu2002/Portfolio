@@ -70,11 +70,6 @@
       </nav>
 
       <div class="header-actions">
-        <!-- High-Converting Primary Header CTA -->
-        <a href="contact.html" class="btn-header-cta" id="btn-header-start-project">
-          Start a Project →
-        </a>
-
         <!-- Direct Resume Download Button -->
         <a href="/assets/Jashwanth_Raj_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn-resume-nav" id="btn-header-resume" aria-label="View Resume in PDF format">
           <span>Resume ↗</span>
@@ -119,10 +114,10 @@
 
   <main id="main-content">
     <div class="container" style="position: relative;">
-      <div class="parallax-watermark" data-parallax="true" data-parallax-speed="-0.28" data-parallax-speed-tablet="-0.18" data-parallax-speed-mobile="-0.1" style="top: 40px; right: -20px;" aria-hidden="true">PROJECTS</div>
+      <div class="parallax-watermark" data-parallax="true" data-parallax-speed="-0.28" data-parallax-speed-tablet="-0.18" data-parallax-speed-mobile="-0.1" style="top: 80px; right: -20px;" aria-hidden="true">PROJECTS</div>
       
       <!-- Page Header -->
-      <div style="max-width: 820px; margin-bottom: var(--space-8); position: relative; z-index: 10;" data-mf-animation="fade-up">
+      <div style="max-width: 820px; margin-top: var(--space-8); margin-bottom: var(--space-8); position: relative; z-index: 10;" data-mf-animation="fade-up">
         <div style="display: flex; gap: 8px; margin-bottom: 12px; flex-wrap: wrap;">
           <span class="badge badge-cyan">SELECTED WORK & PROOF</span>
           <span class="badge badge-emerald">VERIFIED IMPLEMENTATIONS</span>
@@ -137,7 +132,7 @@
       <div class="projects-filter-bar" data-mf-animation="fade-up" data-mf-animation-delay="100">
         <!-- Desktop Pills View -->
         <div class="filter-pills-wrap" role="tablist">
-          <button class="badge badge-cyan interactive filter-btn active" data-filter="all">All Projects (6)</button>
+          <button class="badge badge-cyan interactive filter-btn active" data-filter="all">All Projects (7)</button>
           <button class="badge interactive filter-btn" data-filter="backend">Full-Stack & APIs</button>
           <button class="badge interactive filter-btn" data-filter="ml">Machine Learning & NLP</button>
           <button class="badge interactive filter-btn" data-filter="vision">Computer Vision</button>
@@ -149,7 +144,7 @@
             <div class="filter-dropdown-selected">
               <span class="filter-dropdown-dot"></span>
               <span class="filter-dropdown-label">Domain:</span>
-              <span class="filter-dropdown-current">All Projects (6)</span>
+              <span class="filter-dropdown-current">All Projects (7)</span>
             </div>
             <svg class="filter-dropdown-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <polyline points="6 9 12 15 18 9"></polyline>
@@ -158,7 +153,7 @@
 
           <ul class="filter-dropdown-menu" id="filter-dropdown-menu" role="listbox" aria-labelledby="filter-dropdown-btn">
             <li class="filter-dropdown-item interactive active" role="option" aria-selected="true" data-filter="all">
-              <span>All Projects (6)</span>
+              <span>All Projects (7)</span>
               <svg class="check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#00F0FF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
             </li>
             <li class="filter-dropdown-item interactive" role="option" aria-selected="false" data-filter="backend">
@@ -180,7 +175,98 @@
       <!-- Projects Grid (Structured 3-column / 2-row Responsive Layout) -->
       <div class="cards-grid-4col" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 18px;" data-mf-stagger-animation="fade" data-mf-stagger-delay="100" data-mf-stagger-once="true">
 
-        <!-- Project 1: 369 Herbal's E-Commerce -->
+        <!-- Project 1: Dhansiri Chakki Fresh Atta Platform -->
+        <article class="card-3d spotlight-card project-item card-compact" data-category="backend" id="dhansiri">
+          <div class="holo-frame" style="height: 180px !important;">
+            <img src="/assets/project_dhansiri_atta.jpg" alt="Dhansiri Chakki Fresh Atta E-Commerce Platform" loading="lazy">
+          </div>
+
+          <div class="card-header-meta">
+            <span class="badge badge-cyan" style="font-size: 0.625rem; padding: 2px 6px;">COMMERCIAL · E-COMMERCE</span>
+            <span style="font-family: var(--font-mono); font-size: 0.65rem; color: var(--emerald-status);">Live Deployed ↗</span>
+          </div>
+
+          <h2 class="card-title" style="font-size: 1.15rem;">Dhansiri Chakki Fresh Atta</h2>
+          <p class="card-desc">
+            Direct-to-consumer e-commerce platform and wholesale portal for pure stone-ground chakki whole wheat flour with dynamic pack sizing, shopping cart, and instant WhatsApp ordering.
+          </p>
+
+          <div class="card-tags">
+            <span class="badge">Vanilla JS</span>
+            <span class="badge">CSS3 Tokens</span>
+            <span class="badge">E-Commerce</span>
+            <span class="badge">WhatsApp API</span>
+            <span class="badge">Vercel Edge</span>
+          </div>
+
+          <div class="card-specs" style="font-size: 0.775rem; line-height: 1.5; color: var(--text-secondary); background: rgba(0,0,0,0.25); padding: 8px 10px; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
+            <div><strong style="color: var(--text-primary);">Architecture:</strong> Modular Multi-Page Architecture + Local Cart State</div>
+            <div><strong style="color: var(--text-primary);">Decision:</strong> Direct WhatsApp checkout reducing drop-offs & zero dependencies</div>
+          </div>
+
+          <div class="card-footer" style="margin-top: auto; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border-subtle); padding-top: 10px; gap: 8px; flex-wrap: wrap;">
+            <div style="display: flex; gap: 10px; align-items: center;">
+              <a href="https://dhansiri-ten.vercel.app/" target="_blank" rel="noopener noreferrer" style="color: var(--cyan-primary); font-size: 0.8rem; font-family: var(--font-mono); display: inline-flex; align-items: center; gap: 4px;">
+                Live Demo ↗
+              </a>
+              <span style="color: var(--text-tertiary); font-size: 0.75rem;">·</span>
+              <a href="https://github.com/jashu2002/dhansiri" target="_blank" rel="noopener noreferrer" style="color: var(--text-secondary); font-size: 0.8rem; font-family: var(--font-mono); display: inline-flex; align-items: center; gap: 4px;">
+                GitHub ↗
+              </a>
+            </div>
+            <button type="button" class="btn btn-secondary btn-open-case-study" data-project="dhansiri" style="font-size: 0.775rem; padding: 5px 12px;">
+              Case Study →
+            </button>
+          </div>
+        </article>
+
+        <!-- Project 2: WOofe Luxury Dog Furniture Platform -->
+        <article class="card-3d spotlight-card project-item card-compact" data-category="backend" id="woofe">
+          <div class="holo-frame" style="height: 180px !important;">
+            <img src="/assets/project_woofe_luxury.jpg" alt="WOofe Luxury Dog Furniture Web Application Interface" loading="lazy">
+          </div>
+
+          <div class="card-header-meta">
+            <span class="badge badge-cyan" style="font-size: 0.625rem; padding: 2px 6px;">NEXT.JS · E-COMMERCE</span>
+            <span style="font-family: var(--font-mono); font-size: 0.65rem; color: var(--emerald-status);">Live Deployed ↗</span>
+          </div>
+
+          <h2 class="card-title" style="font-size: 1.15rem;">WOofe Luxury Pet Furniture</h2>
+          <p class="card-desc">
+            Scandinavian concept e-commerce platform for architectural dog furniture and orthopedic resting nests with interactive material timelines and slide-out cart.
+          </p>
+
+          <div class="card-tags">
+            <span class="badge">Next.js 16</span>
+            <span class="badge">React 19</span>
+            <span class="badge">TypeScript</span>
+            <span class="badge">Tailwind CSS</span>
+            <span class="badge">GSAP</span>
+            <span class="badge">Framer Motion</span>
+          </div>
+
+          <div class="card-specs" style="font-size: 0.775rem; line-height: 1.5; color: var(--text-secondary); background: rgba(0,0,0,0.25); padding: 8px 10px; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
+            <div><strong style="color: var(--text-primary);">Architecture:</strong> Next.js App Router + TypeScript + GSAP/Framer Motion</div>
+            <div><strong style="color: var(--text-primary);">Decision:</strong> Interactive material inspection hot spots with slide-out cart state</div>
+          </div>
+
+          <div class="card-footer" style="margin-top: auto; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border-subtle); padding-top: 10px; gap: 8px; flex-wrap: wrap;">
+            <div style="display: flex; gap: 10px; align-items: center;">
+              <a href="https://woozy-xi.vercel.app/" target="_blank" rel="noopener noreferrer" style="color: var(--cyan-primary); font-size: 0.8rem; font-family: var(--font-mono); display: inline-flex; align-items: center; gap: 4px;">
+                Live Demo ↗
+              </a>
+              <span style="color: var(--text-tertiary); font-size: 0.75rem;">·</span>
+              <a href="https://github.com/jashu2002/woofz" target="_blank" rel="noopener noreferrer" style="color: var(--text-secondary); font-size: 0.8rem; font-family: var(--font-mono); display: inline-flex; align-items: center; gap: 4px;">
+                GitHub ↗
+              </a>
+            </div>
+            <button type="button" class="btn btn-secondary btn-open-case-study" data-project="woofe" style="font-size: 0.775rem; padding: 5px 12px;">
+              Case Study →
+            </button>
+          </div>
+        </article>
+
+        <!-- Project 3: 369 Herbal's E-Commerce -->
         <article class="card-3d spotlight-card project-item card-compact" data-category="backend" id="ecommerce">
           <div class="holo-frame" style="height: 180px !important;">
             <img src="/assets/project_ecommerce_369.jpg" alt="369 Herbal's E-Commerce Web Application Interface" loading="lazy">
@@ -375,45 +461,6 @@
           </div>
         </article>
 
-        <!-- Project 6: Asynchronous AI Video Creator -->
-        <article class="card-3d spotlight-card project-item card-compact" data-category="backend" id="video">
-          <div class="holo-frame" style="height: 180px !important;">
-            <img src="/assets/project_video_creator.jpg" alt="Asynchronous AI Video Creator Media Processing Pipeline" loading="lazy">
-          </div>
-
-          <div class="card-header-meta">
-            <span class="badge badge-violet" style="font-size: 0.625rem; padding: 2px 6px;">MEDIA PIPELINE · FASTAPI</span>
-            <span style="font-family: var(--font-mono); font-size: 0.65rem; color: var(--cyan-primary);">Pipeline Active</span>
-          </div>
-
-          <h2 class="card-title" style="font-size: 1.15rem;">Asynchronous Video Creation Pipeline</h2>
-          <p class="card-desc">
-            Media composition engine combining MoviePy, FFmpeg, and FastAPI to assemble multi-track video scenes, synchronized audio voiceovers, and text overlays asynchronously.
-          </p>
-
-          <div class="card-tags">
-            <span class="badge">MoviePy</span>
-            <span class="badge">FFmpeg</span>
-            <span class="badge">FastAPI</span>
-            <span class="badge">Python</span>
-            <span class="badge">Streamlit</span>
-          </div>
-
-          <div class="card-specs" style="font-size: 0.775rem; line-height: 1.5; color: var(--text-secondary); background: rgba(0,0,0,0.25); padding: 8px 10px; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
-            <div><strong style="color: var(--text-primary);">Architecture:</strong> Background Task Worker + FFmpeg Composition Engine</div>
-            <div><strong style="color: var(--text-primary);">Decision:</strong> Decoupled video assembly from HTTP cycle to prevent timeouts</div>
-          </div>
-
-          <div class="card-footer" style="margin-top: auto; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border-subtle); padding-top: 10px;">
-            <a href="https://github.com/jashu2002" target="_blank" rel="noopener noreferrer" style="color: var(--cyan-primary); font-size: 0.8rem; font-family: var(--font-mono); display: inline-flex; align-items: center; gap: 4px;">
-              GitHub ↗
-            </a>
-            <button type="button" class="btn btn-secondary btn-open-case-study" data-project="video" style="font-size: 0.775rem; padding: 5px 12px;">
-              Case Study →
-            </button>
-          </div>
-        </article>
-
       </div>
 
       <!-- Interactive Case Study Modal Overlay -->
@@ -437,9 +484,14 @@
 
           <div style="margin-top: 24px; padding-top: 16px; border-top: 1px solid var(--border-subtle); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
             <div id="modal-case-tech" style="display: flex; gap: 6px; flex-wrap: wrap;"></div>
-            <a id="modal-case-github" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="padding: 8px 18px; font-size: 0.85rem;">
-              View GitHub Repository ↗
-            </a>
+            <div style="display: flex; gap: 10px; align-items: center; flex-wrap: wrap;">
+              <a id="modal-case-live" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="padding: 8px 18px; font-size: 0.85rem; display: none;">
+                Visit Live Website ↗
+              </a>
+              <a id="modal-case-github" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="padding: 8px 18px; font-size: 0.85rem;">
+                View GitHub Repository ↗
+              </a>
+            </div>
           </div>
 
         </div>
@@ -555,6 +607,78 @@
 
     // Detailed Case Study Data Store (Verified Real Projects)
     const caseStudies = {
+      dhansiri: {
+        badge: '<span class="badge badge-cyan">COMMERCIAL · E-COMMERCE</span>',
+        title: "Dhansiri Chakki Fresh Atta Platform",
+        purpose: "Multi-Page D2C Storefront, B2B Portal & Direct WhatsApp Checkout",
+        github: "https://github.com/jashu2002/dhansiri",
+        live: "https://dhansiri-ten.vercel.app/",
+        tech: ["HTML5", "CSS3 Custom Properties", "Vanilla JavaScript (ES6+)", "WhatsApp API", "Vercel Edge", "Responsive Design"],
+        body: `
+          <div>
+            <h3 style="color: #fff; font-size: 1.05rem; margin-bottom: 6px;">1. The Problem & Business Goal</h3>
+            <p>DTR Elite Industries required a modern direct-to-consumer e-commerce storefront for their traditional stone-ground chakki wheat flour brand (Dhansiri). The client needed a zero-friction ordering flow without recurring Shopify/SaaS platform subscriptions, dynamic packaging size selectors (1kg, 5kg, 10kg), free delivery thresholds, coupon validation, and instant ordering tailored to Indian regional consumers.</p>
+          </div>
+          <div>
+            <h3 style="color: #fff; font-size: 1.05rem; margin-bottom: 6px;">2. What I Built & Architecture</h3>
+            <p>Engineered a high-performance multi-page commercial platform with zero external runtime dependencies (pure HTML5, CSS3 design tokens, modular ES6 JavaScript). Features include an interactive shopping cart with local session persistence, 3D mouse parallax packaging showcase, live stone chakki process visualization, wholesale B2B lead capture, and instant WhatsApp checkout integration.</p>
+            <div style="background: rgba(0,0,0,0.4); padding: 10px 14px; border-radius: 6px; border: 1px solid var(--border-subtle); font-family: var(--font-mono); font-size: 0.8rem; color: var(--cyan-primary); margin-top: 8px;">
+              [Browser Client] ──> [Interactive Pack Sizing (1kg / 5kg / 10kg)] ──> [Client Cart State Engine]<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──> [Formatted WhatsApp Order Payload Dispatcher]<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└──> [Global Vercel Edge Network Deployment]
+            </div>
+          </div>
+          <div>
+            <h3 style="color: #fff; font-size: 1.05rem; margin-bottom: 6px;">3. Key Engineering Challenge & Solution</h3>
+            <p><strong>Challenge:</strong> Complex payment gateways often cause 60%+ checkout drop-offs for regional grocery buyers who prefer ordering directly with merchant confirmation.<br>
+            <strong>Solution:</strong> Implemented a 1-click WhatsApp order generator that serializes the customer's selected pack sizes, quantities, applied coupon discount, total amount, and delivery address into a formatted URL string dispatched immediately to the brand's business line, closing the conversion loop in seconds.</p>
+          </div>
+          <div>
+            <h3 style="color: #fff; font-size: 1.05rem; margin-bottom: 6px;">4. Production & Business Impact</h3>
+            <p style="font-style: italic; color: var(--text-primary); border-left: 2px solid var(--cyan-primary); padding-left: 12px;">
+              "Live in production at dhansiri-ten.vercel.app with 0 external JavaScript libraries, near-instant 100/100 Lighthouse performance metrics, and zero recurring hosting or platform fees for the client."
+            </p>
+          </div>
+        `
+      },
+      woofe: {
+        badge: '<span class="badge badge-cyan">NEXT.JS · LUXURY E-COMMERCE</span>',
+        title: "WOofe — Luxury Dog Lifestyle & Furniture",
+        purpose: "Scandinavian Architectural Pet Furniture Concept Store & Interactive Storytelling",
+        github: "https://github.com/jashu2002/woofz",
+        live: "https://woozy-xi.vercel.app/",
+        tech: ["Next.js 16", "React 19", "TypeScript", "Tailwind CSS v4", "GSAP", "Framer Motion", "Lucide Icons", "Vercel Edge"],
+        body: `
+          <div>
+            <h3 style="color: #fff; font-size: 1.05rem; margin-bottom: 6px;">1. The Problem & Design Vision</h3>
+            <p>Traditional pet supply e-commerce sites suffer from visually cluttered, generic product listings that clash with high-end interior aesthetics. The objective was to design and engineer an architectural concept store for WOofe—a Copenhagen-inspired luxury brand uniting canine orthopedic ergonomics with Scandinavian minimalism (bouclé wool, Belgian linen, architectural oak, and orthopedic memory foam).</p>
+          </div>
+          <div>
+            <h3 style="color: #fff; font-size: 1.05rem; margin-bottom: 6px;">2. What I Built & Architecture</h3>
+            <p>Built a modern frontend application on Next.js 16 (App Router) and React 19 leveraging TypeScript for strict component typing. Integrated fluid gesture animations using GSAP and Framer Motion, 3D perspective product cards with smooth hover parallax, an interactive horizontal material storytelling timeline with pulse inspection hotspots, and a slide-out cart drawer with dynamic item state.</p>
+            <div style="background: rgba(0,0,0,0.4); padding: 10px 14px; border-radius: 6px; border: 1px solid var(--border-subtle); font-family: var(--font-mono); font-size: 0.8rem; color: var(--cyan-primary); margin-top: 8px;">
+              [Next.js 16 App Router] ──> [React 19 Server/Client Components] ──> [Tailwind CSS v4 Design Tokens]<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──> [GSAP & Framer Motion Physics Engine]<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└──> [Interactive Slide-Out Shopping Cart State]
+            </div>
+          </div>
+          <div>
+            <h3 style="color: #fff; font-size: 1.05rem; margin-bottom: 6px;">3. Key Engineering Challenge & Solution</h3>
+            <p><strong>Challenge:</strong> Orchestrating complex multi-layered scroll timelines and material hotspot inspection dialogs without causing jank or layout recalculations on mobile devices.<br>
+            <strong>Solution:</strong> Leveraged GPU-accelerated CSS transforms paired with GSAP timeline batching, offloading spring physics to Framer Motion components with strict <code>will-change: transform</code> hints for seamless 60fps scrolling.</p>
+          </div>
+          <div>
+            <h3 style="color: #fff; font-size: 1.05rem; margin-bottom: 6px;">4. Production & Craftsmanship</h3>
+            <p style="font-style: italic; color: var(--text-primary); border-left: 2px solid var(--cyan-primary); padding-left: 12px;">
+              "Live at woozy-xi.vercel.app with flawless type hierarchy, warm organic color palettes (terracotta, ivory, sand, espresso), and editorial craftsmanship tailored for luxury commerce."
+            </p>
+          </div>
+        `
+      },
       ecommerce: {
         badge: '<span class="badge badge-cyan">DJANGO · FULL-STACK</span>',
         title: "369 Herbal's E-Commerce Platform",
@@ -721,39 +845,6 @@
             </p>
           </div>
         `
-      },
-      video: {
-        badge: '<span class="badge badge-violet">MEDIA PIPELINE</span>',
-        title: "Asynchronous Video Creation Pipeline",
-        purpose: "Multi-Track Timeline Rendering & Subtitle Synchronization with FFmpeg",
-        github: "https://github.com/jashu2002",
-        tech: ["Python", "MoviePy", "FFmpeg", "FastAPI", "Streamlit", "JSON"],
-        body: `
-          <div>
-            <h3 style="color: #fff; font-size: 1.05rem; margin-bottom: 6px;">1. The Problem</h3>
-            <p>Video encoding and audio composition are CPU-intensive operations that block traditional HTTP threads, causing web client timeouts and server instability when handled synchronously.</p>
-          </div>
-          <div>
-            <h3 style="color: #fff; font-size: 1.05rem; margin-bottom: 6px;">2. What I Built & Architecture</h3>
-            <p>Engineered an asynchronous media assembly pipeline. Users specify scene timing, audio tracks, and caption text via an interactive interface. The backend delegates rendering to an asynchronous worker that coordinates MoviePy and FFmpeg compositions in the background, exposing a lightweight polling endpoint for render progress.</p>
-            <div style="background: rgba(0,0,0,0.4); padding: 10px 14px; border-radius: 6px; border: 1px solid var(--border-subtle); font-family: var(--font-mono); font-size: 0.8rem; color: var(--violet-primary); margin-top: 8px;">
-              [Client POST /render] ──> [FastAPI Router] ──> [Dispatch Background Task] ──> Returns Job ID immediately<br>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│<br>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└──> [MoviePy Compositor & FFmpeg Encoder] ──> [Output MP4 Storage]
-            </div>
-          </div>
-          <div>
-            <h3 style="color: #fff; font-size: 1.05rem; margin-bottom: 6px;">3. Key Engineering Challenge & Solution</h3>
-            <p><strong>Challenge:</strong> Sub-process zombie leaks and file lock errors when intermediate video clips failed mid-render.<br>
-            <strong>Solution:</strong> Wrapped clip handles in context managers with explicit <code>clip.close()</code> teardown hooks in Python <code>try...finally</code> blocks, guaranteeing OS file handles release immediately.</p>
-          </div>
-          <div>
-            <h3 style="color: #fff; font-size: 1.05rem; margin-bottom: 6px;">4. What I Learned</h3>
-            <p style="font-style: italic; color: var(--text-primary); border-left: 2px solid var(--violet-primary); padding-left: 12px;">
-              "Separating heavy compute workloads from the API request lifecycle is essential for building resilient, production-ready web services."
-            </p>
-          </div>
-        `
       }
     };
 
@@ -854,6 +945,7 @@
       const modalBody = document.getElementById('modal-case-body');
       const modalTech = document.getElementById('modal-case-tech');
       const modalGithub = document.getElementById('modal-case-github');
+      const modalLive = document.getElementById('modal-case-live');
       const btnCloseModal = document.getElementById('btn-close-case-modal');
 
       function openCaseStudy(key) {
@@ -865,6 +957,15 @@
         modalPurpose.textContent = data.purpose;
         modalBody.innerHTML = data.body;
         modalGithub.setAttribute('href', data.github);
+
+        if (modalLive) {
+          if (data.live) {
+            modalLive.setAttribute('href', data.live);
+            modalLive.style.display = 'inline-flex';
+          } else {
+            modalLive.style.display = 'none';
+          }
+        }
 
         modalTech.innerHTML = data.tech.map(t => `<span class="badge" style="font-size: 0.725rem;">${t}</span>`).join('');
 

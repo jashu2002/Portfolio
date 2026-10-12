@@ -26,6 +26,14 @@ export function initCommandPalette() {
           <span><strong>Work:</strong> Selected Projects & Case Studies</span>
           <span class="badge">Page</span>
         </li>
+        <li class="cmd-item" data-action="goto-external" data-url="https://dhansiri-ten.vercel.app/">
+          <span><strong>Featured Client:</strong> Dhansiri Chakki Fresh Atta (Live Storefront)</span>
+          <span class="badge badge-emerald">Live</span>
+        </li>
+        <li class="cmd-item" data-action="goto-external" data-url="https://woozy-xi.vercel.app/">
+          <span><strong>Featured Project:</strong> WOofe Luxury Pet Furniture (Live Next.js App)</span>
+          <span class="badge badge-emerald">Live</span>
+        </li>
         <li class="cmd-item" data-action="goto" data-url="services.html">
           <span><strong>Services:</strong> Web, E-Commerce, Python & AI Solutions</span>
           <span class="badge badge-cyan">Services</span>

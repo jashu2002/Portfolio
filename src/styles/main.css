@@ -48,7 +48,9 @@
   --space-8: 32px;
   --space-12: 48px;
   --space-16: 64px;
+  --space-20: 80px;
   --space-24: 96px;
+  --space-32: 128px;
 
   /* Radius Scale */
   --radius-sm: 6px;
@@ -97,6 +99,12 @@ body {
   width: 100%;
   max-width: 100vw;
   overflow-x: hidden;
+  position: relative;
+}
+
+/* Subpages: container directly under main-content sits safely below the 72px fixed header */
+#main-content > .container:first-child:not(.hero-section) {
+  padding-top: clamp(100px, 12vh, 128px);
   position: relative;
 }
 
@@ -296,6 +304,18 @@ button {
 }
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(255, 255, 255, 0.3);
+}
+
+/* Animation Graceful Fallback: Ensure elements never stay stuck at opacity 0 */
+@keyframes mfGracefulReveal {
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.mf-init[data-mf-animation]:not(.mf-animate) {
+  animation: mfGracefulReveal 0.5s ease 1s forwards;
 }
 
 /* Reduced Motion Respect */

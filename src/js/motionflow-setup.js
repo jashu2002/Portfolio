@@ -31,7 +31,7 @@ export function initMotionFlow() {
         once: true
       },
       ticker: {
-        speed: 55,
+        speed: 25,
         pauseOnHover: true
       }
     });

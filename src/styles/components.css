@@ -987,7 +987,7 @@ body.cursor-hover .custom-cursor-ring {
   display: flex;
   width: max-content;
   white-space: nowrap;
-  animation: tickerMarquee 32s linear infinite;
+  animation: tickerMarquee 75s linear infinite;
 }
 
 .ticker-strip:hover .ticker-track {

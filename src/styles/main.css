@@ -18,7 +18,7 @@
   --border-medium: rgba(255, 255, 255, 0.16);
   --border-accent: rgba(45, 112, 247, 0.4);
   --border-cyan: rgba(0, 240, 255, 0.4);
-  --border-violet: rgba(168, 85, 247, 0.4);
+  --border-violet: rgba(56, 189, 248, 0.4);
 
   /* Typography / Text Contrast (WCAG AA 4.5:1+) */
   --text-primary: #FFFFFF;
@@ -29,8 +29,8 @@
   /* Accent Vibrancy */
   --cyan-primary: #00F0FF;
   --cyan-glow: rgba(0, 240, 255, 0.25);
-  --violet-primary: #A855F7;
-  --violet-glow: rgba(168, 85, 247, 0.25);
+  --violet-primary: #38BDF8;
+  --violet-glow: rgba(56, 189, 248, 0.25);
   --emerald-status: #10B981;
   --amber-warning: #F59E0B;
 

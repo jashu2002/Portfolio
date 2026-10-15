@@ -28,7 +28,7 @@
   display: inline-flex;
   align-items: center;
   gap: var(--space-3);
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
   font-size: 0.95rem;
   font-weight: 600;
   letter-spacing: -0.01em;
@@ -128,7 +128,8 @@
   align-items: center;
   gap: 8px;
   padding: 7px 14px;
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
+  font-weight: 500;
   font-size: 0.775rem;
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid var(--border-medium);
@@ -211,7 +212,8 @@
   align-items: center;
   gap: 6px;
   padding: 6px 10px;
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
+  font-weight: 600;
   font-size: 0.775rem;
   color: var(--text-tertiary);
   background: rgba(255, 255, 255, 0.03);
@@ -238,7 +240,8 @@
   align-items: center;
   gap: 5px;
   padding: 6px 13px;
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
+  font-weight: 600;
   font-size: 0.775rem;
   font-weight: 600;
   color: var(--cyan-primary);
@@ -419,7 +422,8 @@ body.cursor-hover .custom-cursor-ring {
   align-items: center;
   justify-content: space-between;
   font-size: 0.775rem;
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
+  font-weight: 600;
   color: var(--text-tertiary);
 }
 
@@ -431,7 +435,7 @@ body.cursor-hover .custom-cursor-ring {
 
 .node-status {
   font-size: 0.725rem;
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
   color: var(--text-secondary);
 }
 
@@ -517,7 +521,8 @@ body.cursor-hover .custom-cursor-ring {
 
 .quick-cmd-btn {
   font-size: 0.725rem !important;
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
+  font-weight: 600;
   padding: 3px 9px !important;
   cursor: pointer;
   background: rgba(255, 255, 255, 0.05);
@@ -662,16 +667,17 @@ body.cursor-hover .custom-cursor-ring {
 }
 
 .card-compact .card-specs {
-  background: rgba(0, 0, 0, 0.4);
-  border: 1px solid var(--border-subtle);
+  background: rgba(255, 255, 255, 0.02);
+  border: none;
+  border-left: 2px solid rgba(255, 255, 255, 0.18);
   border-radius: var(--radius-sm);
-  padding: 6px 8px;
-  font-family: var(--font-mono);
-  font-size: 0.675rem;
+  padding: 8px 10px;
+  font-family: var(--font-sans);
+  font-size: 0.775rem;
   display: flex;
   flex-direction: column;
-  gap: 2px;
-  line-height: 1.32;
+  gap: 4px;
+  line-height: 1.5;
 }
 
 .card-compact .card-footer {
@@ -734,7 +740,8 @@ body.cursor-hover .custom-cursor-ring {
 .stat-value {
   font-size: clamp(2rem, 3.5vw, 2.75rem);
   font-weight: 700;
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
+  font-variant-numeric: tabular-nums;
   color: var(--text-primary);
   letter-spacing: -0.04em;
   display: flex;
@@ -949,7 +956,7 @@ body.cursor-hover .custom-cursor-ring {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
   font-size: 0.8rem;
   font-weight: 600;
   letter-spacing: 0.08em;
@@ -1061,7 +1068,8 @@ body.cursor-hover .custom-cursor-ring {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
+  font-weight: 600;
   font-size: 0.72rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -1076,7 +1084,7 @@ body.cursor-hover .custom-cursor-ring {
 
 .parallax-watermark {
   position: absolute;
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
   font-size: clamp(3.5rem, 12vw, 9.5rem);
   font-weight: 900;
   letter-spacing: 0.12em;
@@ -1154,7 +1162,8 @@ body.cursor-hover .custom-cursor-ring {
   background: transparent;
   border: 1px solid transparent;
   color: var(--text-tertiary);
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
+  font-weight: 500;
   font-size: 0.775rem;
   padding: 6px 12px;
   border-radius: var(--radius-sm);
@@ -1192,7 +1201,8 @@ body.cursor-hover .custom-cursor-ring {
   background: rgba(255, 255, 255, 0.04);
   border: 1px solid rgba(255, 255, 255, 0.12);
   color: var(--text-secondary);
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
+  font-weight: 500;
   font-size: 0.75rem;
   padding: 6px 12px;
   border-radius: var(--radius-sm);
@@ -1275,7 +1285,7 @@ body.cursor-hover .custom-cursor-ring {
 .syn-kw { color: #00F0FF; font-weight: 600; }
 .syn-fn { color: #F59E0B; }
 .syn-str { color: #10B981; }
-.syn-type { color: #A855F7; font-weight: 600; }
+.syn-type { color: #38BDF8; font-weight: 600; }
 .syn-cm { color: rgba(255, 255, 255, 0.4); font-style: italic; }
 .syn-num { color: #EC4899; }
 
@@ -1629,7 +1639,8 @@ body.cursor-hover .custom-cursor-ring {
   align-items: center;
   gap: 6px;
   padding: 8px 18px;
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
+  font-weight: 600;
   font-size: 0.8rem;
   font-weight: 700;
   letter-spacing: 0.02em;
@@ -1700,7 +1711,7 @@ body.cursor-hover .custom-cursor-ring {
 }
 
 .service-deliverables-list li::before {
-  content: "✓";
+  content: "·"; font-size: 1.4rem; line-height: 1;
   color: var(--cyan-primary);
   font-weight: 700;
   flex-shrink: 0;
@@ -1732,7 +1743,8 @@ body.cursor-hover .custom-cursor-ring {
 }
 
 .step-num-badge {
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
+  font-weight: 600;
   font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -1846,19 +1858,19 @@ body.cursor-hover .custom-cursor-ring {
 .status-badge {
   display: inline-flex;
   align-items: center;
-  gap: 5px;
-  font-family: var(--font-mono);
-  font-size: 0.65rem;
-  letter-spacing: 0.03em;
-  padding: 2px 7px;
+  gap: 6px;
+  font-family: var(--font-sans);
+  font-size: 0.6875rem;
+  letter-spacing: 0.04em;
+  padding: 3px 8px;
   border-radius: var(--radius-full);
-  font-weight: 500;
+  font-weight: 600;
   text-transform: uppercase;
 }
 
 .status-badge-dot {
-  width: 5px;
-  height: 5px;
+  width: 6px;
+  height: 6px;
   border-radius: 50%;
   display: inline-block;
 }
@@ -1866,41 +1878,37 @@ body.cursor-hover .custom-cursor-ring {
 .status-live {
   background: rgba(16, 185, 129, 0.1);
   color: #10B981;
-  border: 1px solid rgba(16, 185, 129, 0.3);
+  border: 1px solid rgba(16, 185, 129, 0.25);
 }
 .status-live .status-badge-dot {
   background: #10B981;
-  box-shadow: 0 0 6px #10B981;
 }
 
 .status-private {
-  background: rgba(168, 85, 247, 0.1);
-  color: #C084FC;
-  border: 1px solid rgba(168, 85, 247, 0.3);
+  background: rgba(148, 163, 184, 0.1);
+  color: #94A3B8;
+  border: 1px solid rgba(148, 163, 184, 0.25);
 }
 .status-private .status-badge-dot {
-  background: #C084FC;
-  box-shadow: 0 0 6px #C084FC;
+  background: #94A3B8;
 }
 
 .status-experiment {
   background: rgba(245, 158, 11, 0.1);
   color: #FBBF24;
-  border: 1px solid rgba(245, 158, 11, 0.3);
+  border: 1px solid rgba(245, 158, 11, 0.25);
 }
 .status-experiment .status-badge-dot {
   background: #FBBF24;
-  box-shadow: 0 0 6px #FBBF24;
 }
 
 .status-opensource {
-  background: rgba(0, 240, 255, 0.1);
+  background: rgba(0, 240, 255, 0.08);
   color: var(--cyan-primary);
-  border: 1px solid rgba(0, 240, 255, 0.3);
+  border: 1px solid rgba(0, 240, 255, 0.22);
 }
 .status-opensource .status-badge-dot {
   background: var(--cyan-primary);
-  box-shadow: 0 0 6px var(--cyan-primary);
 }
 
 .badge-amber {
@@ -1926,7 +1934,7 @@ body.cursor-hover .custom-cursor-ring {
 }
 
 .deep-dive-details[open] {
-  border-color: rgba(0, 240, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.15);
   background: rgba(0, 0, 0, 0.55);
 }
 
@@ -1935,9 +1943,10 @@ body.cursor-hover .custom-cursor-ring {
   align-items: center;
   justify-content: space-between;
   padding: 6px 10px;
-  font-family: var(--font-mono);
-  font-size: 0.725rem;
-  color: var(--cyan-primary);
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--text-secondary);
   cursor: pointer;
   user-select: none;
   transition: color var(--transition-fast);
@@ -2002,7 +2011,7 @@ body.cursor-hover .custom-cursor-ring {
 }
 
 .why-work-card {
-  background: rgba(10, 10, 16, 0.75);
+  background: var(--bg-surface);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-md);
   padding: 22px 20px;
@@ -2012,15 +2021,18 @@ body.cursor-hover .custom-cursor-ring {
 }
 
 .why-work-card:hover {
-  border-color: rgba(0, 240, 255, 0.35);
+  border-color: rgba(255, 255, 255, 0.2);
   transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4), 0 0 20px rgba(0, 240, 255, 0.05);
+  box-shadow: 0 14px 28px -8px rgba(0, 0, 0, 0.75);
 }
 
 .why-work-num {
-  font-family: var(--font-mono);
-  font-size: 0.75rem;
-  color: var(--cyan-primary);
+  font-family: var(--font-sans);
+  font-size: 0.725rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: var(--text-tertiary);
+  text-transform: uppercase;
   margin-bottom: 8px;
   display: flex;
   align-items: center;
